@@ -16,6 +16,7 @@
 
 .menu_list__item-link {
    text-decoration: none;
+   color: dimgray;
 }
 
 .menu_list__item-link:hover {

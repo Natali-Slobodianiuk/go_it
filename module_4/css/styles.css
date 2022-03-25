@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body {
+  margin: 0;
+}
 .content {
   width: 1110px;
   margin: 0 auto;
@@ -19,7 +27,6 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #515151;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: -2px;
   text-align: center;
   margin: 0 0 130px 0;
@@ -31,7 +38,8 @@
   height: 7px;
   width: 164px;
   background-color: #1abc9c;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
+  border-top: 30px solid white;
 }
 
 .latest_news::after {
@@ -40,14 +48,14 @@
   height: 7px;
   width: 164px;
   background-color: #1abc9c;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
+  border-top: 30px solid white;
 }
 
 .logo {
   font-size: 30px;
   line-height: 32px;
   color: #605e5e;
-  font-family: "Segoe UI", Tahoma, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -75,7 +83,6 @@
   text-decoration: none;
   text-transform: uppercase;
   line-height: 17px;
-  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 .site_navigation__item-link:hover {
@@ -111,11 +118,9 @@
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Segoe UI", sans-serif;
 }
 
 .product_information {
-  box-sizing: border-box;
   width: 255px;
 }
 
@@ -161,7 +166,6 @@
   line-height: 26px;
   color: #555252;
   font-weight: bold;
-  font-family: "Segoe UI", Tahoma, sans-serif;
   text-align: left;
   margin: 0;
 }
@@ -179,7 +183,6 @@
   font-size: 14px;
   line-height: 26px;
   color: #555252;
-  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 .button {
@@ -192,7 +195,6 @@
   height: 50px;
   text-align: center;
   text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
 }
 

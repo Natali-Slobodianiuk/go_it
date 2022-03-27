@@ -4,35 +4,33 @@
   --color-aсcent-light: #7fd9c7;
   --color-aсcent-dark: #1abc9c;
   --color-price-background: #8c8c8c;
-  --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --primary-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
   box-sizing: border-box;
   text-transform: uppercase;
-  font-family: var(--font);
+  font-family: var(--primary-font);
 }
-.main {
-  background-color: #e9f0fd;
-}
-.wrapper {
+
+.content {
   margin: 0 auto;
-  text-align: center;
   width: 1600px;
+  padding-top: 38px;
 }
 
 .page_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
   width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 32px;
 }
 
 .logo {
   color: var(--main-color);
   font-size: 30px;
+  text-align: center;
   line-height: 32px;
   text-decoration: none;
 }
@@ -45,6 +43,7 @@
 .menu_list {
   display: inline-block;
   font-weight: bold;
+  text-align: center;
   font-size: 14px;
   line-height: 11px;
   list-style: none;
@@ -70,24 +69,16 @@
   color: var(--color-aсcent-dark);
 }
 
-.banner-section {
-  margin-bottom: 100px;
-}
 .banner_img {
   filter: brightness(50%);
-  /* opacity: 0.5; */
 }
 
 .banner {
-  display: block;
   width: 1600px;
-  height: auto;
-  margin: 0;
   position: relative;
 }
 
 .banner_text {
-  display: block;
   color: var(--color-additional);
   position: absolute;
   top: 50%;
@@ -101,12 +92,11 @@
   font-size: 60px;
   font-weight: bold;
   line-height: 82px;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .details_banner {
   font-size: 24px;
-  line-height: 54px;
   margin: 0;
 }
 
@@ -148,7 +138,8 @@
   font-size: 48px;
   line-height: 32px;
   font-weight: bold;
-  font-family: var(--font);
+  text-align: center;
+  font-family: var(--primary-font);
   margin: 0 0 118px 0;
 }
 
@@ -158,17 +149,19 @@
   background-color: var(--color-aсcent-dark);
   width: 160px;
   height: 8px;
-  margin: 30px auto 0;
+  margin: 0 auto;
+  border: 30px solid #e9f0fd;
 }
 .product {
-  display: block;
-  width: 1100px;
-  margin: 0 auto 100px;
-  padding: 0;
+  background-color: #e9f0fd;
+  width: 1600px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .product_list {
   list-style: none;
+  text-align: center;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -187,7 +180,8 @@
 .product_information {
   display: block;
   max-width: 255px;
-  font-family: var(--font);
+  height: 42px;
+  font-family: var(--primary-font);
   color: var(--color-additional);
 }
 .product_img {
@@ -197,6 +191,7 @@
 .description,
 .price {
   display: inline-block;
+  text-align: center;
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
@@ -212,24 +207,23 @@
   background-color: var(--color-price-background);
 }
 .img {
-  display: block;
   position: relative;
 }
 
 .filter {
   width: 255px;
   height: 322px;
-  border: 10px solid white;
-  background-color: #323232;
+  border: none;
+  background-color: transparent;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
 }
 
 .product_list__item:hover .filter {
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 10px solid white;
 }
 
 .product_list__item:hover .description {
@@ -316,7 +310,6 @@
 }
 
 .footer {
-  height: 90px;
   margin: 0 auto;
   background-color: var(--main-color);
   display: flex;
@@ -331,6 +324,7 @@
   color: var(--color-additional);
   text-transform: capitalize;
   margin: 0;
+  padding: 40px 0;
 }
 
 .text_footer_color {

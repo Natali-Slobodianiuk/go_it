@@ -176,23 +176,23 @@
 }
 
 .web_design::before {
-  content: url(../img/2scale.png);
+  content: url(./img/2scale.png);
 }
 
 .creativity::before {
-  content: url(..img/3computer.png);
+  content: url(.img/3computer.png);
 }
 
 .seo::before {
-  content: url(../img/4book.png);
+  content: url(./img/4book.png);
 }
 
 .css_html::before {
-  content: url(../img/5home.png);
+  content: url(./img/5home.png);
 }
 
 .digital::before {
-  content: url(../img/6frame.png);
+  content: url(./img/6frame.png);
 }
 
 .section_team {

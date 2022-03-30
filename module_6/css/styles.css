@@ -20,6 +20,7 @@
 
 .header {
   font-family: var(--primary-font);
+  margin-bottom: 115px;
 }
 
 .menu {
@@ -27,7 +28,6 @@
   justify-content: space-between;
   align-items: flex-end;
   min-width: 65px;
-  margin-bottom: 115px;
 }
 
 .menu_list {
@@ -67,25 +67,21 @@
 }
 
 .menu_list__item_link::after {
-  display: block;
+  display: none;
   content: "";
-  width: 100%;
-  height: 3px;
-  background-color: var(--accent-color);
-  margin: 0 auto;
-  border-top: 12px solid white;
-  opacity: 0;
+  margin: 5px auto 0;
+  border-bottom: 3px solid var(--accent-color);
   transition: color 0.2s linear;
 }
 
 .menu_list__item_link:hover:after {
-  opacity: 1;
+  display: block;
 }
 .block_inscription {
   text-align: center;
   font-weight: bold;
   line-height: 45px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .block_title {
@@ -129,10 +125,8 @@
   display: block;
   content: "";
   width: 60px;
-  height: 3px;
-  background-color: var(--accent-color);
-  margin: 0 auto;
-  border-top: 44px solid white;
+  margin: 44px auto 0;
+  border-bottom: 3px solid var(--accent-color);
 }
 
 .text_servises {
@@ -204,10 +198,11 @@
   font-family: var(--text-font);
   font-size: 15px;
   line-height: 24px;
+  font-weight: normal;
   text-align: center;
   display: block;
   width: 980px;
-  margin: 0 auto 95px;
+  margin: 45px auto 0;
 }
 
 .team_list {

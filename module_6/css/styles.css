@@ -32,7 +32,6 @@
 
 .menu_list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -196,9 +195,9 @@
 .section_team_text {
   color: var(--color-text);
   font-family: var(--text-font);
+  font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  font-weight: normal;
   text-align: center;
   display: block;
   width: 980px;
@@ -219,6 +218,7 @@
 }
 
 .name {
+  display: block;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
@@ -245,7 +245,6 @@
 
 .img_box {
   position: relative;
-  margin-bottom: 30px;
   transition: transform 0.2s linear;
 }
 
@@ -264,7 +263,6 @@
 .social_icon {
   margin-right: 1px;
   background-color: var(--social-icon-color);
-  opacity: 0;
 }
 
 .fa-facebook-square::before {
@@ -295,6 +293,7 @@
 }
 
 .filter {
+  display: none;
   width: 380px;
   height: 470px;
   position: absolute;
@@ -305,13 +304,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
+  opacity: 0.9;
   transition: opacity 0.2s linear;
 }
 
 .img_box:hover .filter {
-  opacity: 0.9;
+  display: block;
 }
+
 .img_box:hover .social_icon {
   opacity: 1;
 }
@@ -322,6 +322,16 @@
 
 .img_box:hover {
   transform: translate(-10px, -10px);
+}
+
+.image {
+  margin: 0;
+  background-color: var(--main-color);
+}
+
+.img_infomation {
+  background-color: #fff;
+  padding-top: 30px;
 }
 
 .footer {
@@ -344,18 +354,13 @@
   color: var(--accent-color);
 }
 
-.email_form {
-  height: 40px;
-  width: 380px;
-  display: flex;
-}
-
 .email {
   border: 1px solid #e5e5e5;
-  border-right-color: white;
+  border-right: none;
   color: #f5f5f5;
   font-family: var(--text-font);
   font-style: italic;
+  height: 40px;
 }
 
 .submit {
@@ -367,5 +372,11 @@
   font-weight: bold;
   font-size: 14px;
   width: 150px;
+  height: 40px;
   cursor: pointer;
+  padding: 0;
+}
+
+.form_email {
+  display: flex;
 }

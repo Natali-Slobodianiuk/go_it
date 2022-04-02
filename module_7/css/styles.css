@@ -1,11 +1,37 @@
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v23-latin-600.woff2") format("woff2"),
+    url("../fonts/montserrat-v23-latin-600.woff") format("woff");
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/montserrat-v23-latin-900.woff2") format("woff2"),
+    url("../fonts/montserrat-v23-latin-900.woff") format("woff");
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v22-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v22-latin-regular.woff") format("woff");
+}
+
 :root {
   --main-color: #222222;
   --text-color: #777777;
   --accent-color: #fed136;
+  --light-color: #ffffff;
   --primery-font: "Montserrat", sans-serif;
   --services-font: "Roboto Slab", serif;
-  --logo-font: "Wisdom Script";
-  --additional-font: "Droid Serif";
+  --logo-font: "Great Vibes", cursive;
+  --additional-font: "Italianno", cursive;
 }
 
 * {
@@ -34,8 +60,9 @@
 .logo {
   font-family: var(--logo-font);
   color: var(--accent-color);
-  font-size: 26px;
+  font-size: 36px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .menu_list {
@@ -49,7 +76,7 @@
   text-transform: uppercase;
   font-family: var(--primery-font);
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .menu_list__item:not(:last-child) {
@@ -82,12 +109,12 @@
   text-transform: uppercase;
   color: var(--main-color);
   font-family: var(--primery-font);
-  font-weight: 600;
+  font-weight: 900;
   margin: 0 0 25px;
 }
 
 .sub_title {
-  font-size: 16px;
+  font-size: 35px;
   font-family: var(--additional-font);
   color: var(--text-color);
 }
@@ -104,7 +131,7 @@
   font-size: 18px;
   color: var(--main-color);
   font-family: var(--primery-font);
-  font-weight: 600;
+  font-weight: 900;
   margin: 0 0 18px;
 }
 
@@ -166,7 +193,7 @@
 }
 
 .header_footer h2 {
-  color: white;
+  color: var(--light-color);
 }
 
 .user_info {
@@ -218,9 +245,26 @@
   font-family: var(--primery-font);
   font-weight: 600;
   text-transform: uppercase;
-  color: white;
+  color: var(--light-color);
   border: 1px solid transparent;
   border-radius: 2%;
   padding: 0;
   cursor: pointer;
+}
+
+.user_form input[type="text"]:valid,
+.user_form input[type="email"]:valid,
+.user_form textarea[type="message"]:valid {
+  outline-color: green;
+}
+
+.user_form input[type="text"]:invalid,
+.user_form input[type="email"]:invalid,
+.user_form textarea[type="message"]:invalid {
+  outline-color: red;
+}
+
+.user_form input,
+.user_form textarea {
+  font-size: 24px;
 }

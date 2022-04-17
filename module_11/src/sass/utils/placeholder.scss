@@ -1,0 +1,19 @@
+%list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+%after_menu {
+    content: '';
+    width: 100%;
+    margin: 5px auto 0;
+    border-bottom: 4px solid $social-icon-color;
+}
+
+%absolute_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

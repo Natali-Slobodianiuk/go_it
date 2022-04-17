@@ -1,0 +1,116 @@
+.team {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    .team-header {
+        margin-bottom: 90px;
+
+        &__pretitle {
+            display: block;
+            @include font-style('Kaushan Script', 24px);
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            @include font-style('Montserrat Bold', 30px, uppercase);
+            margin: 0 0 45px;
+        }
+
+        &__title:after {
+            display: block;
+            @include after(60px, 4px, solid, $accent-color);
+            margin: 40px auto 0;
+        }
+        &__description {
+            @include font-style('Roboto', 15px);
+            color: $color-text;
+            line-height: 21px;
+            margin: 0;
+        }
+    }
+    .img {
+        height: 470px;
+        width: 380px;
+        background-color: #999999;
+    }
+
+    .team-list {
+        @include flex-center(hor);
+        @extend %list-style;
+
+        &__figure {
+            margin: 0;
+        }
+
+        &__background {
+            background-color: $main-color;
+            width: 380px;
+            height: 470px;
+            margin-bottom: 30px;
+        }
+        &__img_box {
+            position: relative;
+            transition: transform 0.2s linear;
+        }
+
+        &__img_box:hover {
+            transform: translate(-10px, -10px);
+        }
+
+        &__filter {
+            display: none;
+            width: 380px;
+            height: 470px;
+            background-image: linear-gradient($accent-color-gradient, $social-icon-color-gradient);
+            position: absolute;
+        }
+
+        &__img_box:hover .team-list__filter {
+            display: block;
+        }
+        &__name {
+            display: block;
+            @include font-style('Montserrat', 14px, uppercase);
+            font-weight: 600;
+        }
+
+        &__position {
+            @include font-style('Roboto', 15px);
+            color: $color-text;
+            font-style: italic;
+        }
+    }
+
+    .team-list__social {
+        @extend %list-style;
+        width: 224px;
+        height: 55px;
+        @include flex-center(hor);
+        @extend %absolute_center;
+    }
+
+    .team-list__social_item {
+        width: 55px;
+        height: 55px;
+        background-color: $social-icon-color;
+        @include flex-center(ver);
+        justify-content: center;
+    }
+
+    .team-list__social_item:hover {
+        background-color: $accent-color;
+        cursor: pointer;
+    }
+    .team-list__photo {
+        display: block;
+    }
+    .team-list__social_icon {
+        fill: $accent-color;
+    }
+
+    .team-list__social_item:hover .team-list__social_icon {
+        fill: $light-color;
+    }
+}

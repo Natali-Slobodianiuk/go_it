@@ -1,0 +1,12 @@
+.nav-addition {
+    width: 190px;
+    margin-left: 50px;
+
+    .nav-addition-list {
+        @include flex-center;
+        @extend %list-style;
+    }
+    .nav-addition_icon {
+        fill: $light-color;
+    }
+}

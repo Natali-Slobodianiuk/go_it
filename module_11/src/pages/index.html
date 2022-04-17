@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            The following 2 meta tags must come first in the <head>
+            to consistently ensure proper document rendering.
+            Any other head element should come after these tags.
+        -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Page title -->
+        <title>Gulp boilerplate</title>
+
+        <!-- Short description of the document (limit to 150 characters) -->
+        <meta name="description" content="Page description" />
+
+        <!-- Social metatags -->
+        <meta property="og:title" content="Unique page title" />
+        <meta property="og:description" content="Page description" />
+        <meta property="og:image" content="https://www.mywebsite.com/image.jpg" />
+        <meta property="og:image:alt" content="Image description" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mywebsite.com/page" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Theme Color for Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000000" />
+
+        <!-- SVG favicon for modern browsers. -->
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+
+        <!-- The 180×180px icon Apple devices will use if you add the page to your home screen. -->
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+        <!-- Prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs. -->
+        <link rel="canonical" href="https://www.mywebsite.com/page" />
+
+        <!-- inject:css -->
+        <!-- endinject -->
+
+        <link rel="stylesheet" href="./css/index.min.css"
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="banner">
+                <header class="header">
+                    <a href="#" class="logo">MoGo</a>
+                    <nav class="navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">About</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">service</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">work</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">blog</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav-addition">
+                            <ul class="nav-addition-list">
+                                <li class="nav-addition__item">
+                                    <a href="#" class="nav-addition__link">
+                                        <svg class="nav-addition_icon" width="19px" height="19px">
+                                            <use href="./images/icons.svg#licon-shop"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-addition__item">
+                                    <a href="#" class="nav-addition__link">
+                                        <svg class="nav-addition_icon" width="19px" height="19px">
+                                            <use href="./images/icons.svg#licon-search"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <div class="banner-text">
+                    <span class="banner-text__pretitle">Creative Template</span>
+                    <h2 class="banner-text__title">Welcome to MoGo</h2>
+                </div>
+                <button class="banner-text__button">Learn more</button>
+            </div>
+
+            <main class="main">
+                <section class="services">
+                    <header class="services-header">
+                        <span class="services-header__pretitle">We work with</span>
+                        <h2 class="services-header__title">Amazing Services</h2>
+                    </header>
+
+                    <ul class="services-list">
+                        <li class="services-list__item">
+                            <svg class="services-list__icon" width="35px" height="35px">
+                                <use href="./images/icons.svg#licon-clock"></use>
+                            </svg>
+                            <div class="services__text">
+                                <h3 class="services__name">Photography</h3>
+                                <p class="services__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="services-list__item">
+                            <svg class="services-list__icon" width="35px" height="35px">
+                                <use href="./images/icons.svg#licon-graph"></use>
+                            </svg>
+                            <div class="services__text">
+                                <h3 class="services__name">Web Design</h3>
+                                <p class="services__description">
+                                    Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="services-list__item">
+                            <svg class="services-list__icon" width="35px" height="35px">
+                                <use href="../images/icons.svg#licon-komputer"></use>
+                            </svg>
+                            <div class="services__text">
+                                <h3 class="services__name">Creativity</h3>
+                                <p class="services__description">
+                                    Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="services-list__item">
+                            <svg class="services-list__icon" width="35px" height="35px">
+                                <use href="./images/icons.svg#licon-book"></use>
+                            </svg>
+                            <div class="services__text">
+                                <h3 class="services__name">seo</h3>
+                                <p class="services__description">
+                                    Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="services-list__item">
+                            <svg class="services-list__icon" width="35px" height="35px">
+                                <use href="./images/icons.svg#licon-home"></use>
+                            </svg>
+                            <div class="services__text">
+                                <h3 class="services__name">Css/Html</h3>
+                                <p class="services__description">
+                                    Lorem dolor sit amet, consectetur adipiscing elit, sed do
+                                    tempor.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="services-list__item">
+                            <svg class="services-list__icon" width="35px" height="35px">
+                                <use href="./images/icons.svg#licon-frame"></use>
+                            </svg>
+                            <div class="services__text">
+                                <h3 class="services__name">digital</h3>
+                                <p class="services__description">
+                                    Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="team">
+                    <header class="team-header">
+                        <span class="team-header__pretitle">Who we are</span>
+                        <h2 class="team-header__title">Meet our team</h2>
+                        <p class="team-header__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                        </p>
+                    </header>
+
+                    <ul class="team-list">
+                        <li class="team-list__item">
+                            <figure class="team-list__figure">
+                                <div class="team-list__background">
+                                    <div class="team-list__img_box">
+                                        <div class="team-list__filter">
+                                            <ul class="team-list__social">
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-facebook"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-twitter"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-pinterest"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-instagram"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <img
+                                            class="team-list__photo"
+                                            srcset="
+                                                ./images/Layer01-min.png,
+                                                ./images/Layer01@2x-min.png
+                                            "
+                                            src="./images/Layer01-min.png"
+                                            alt="team_photo"
+                                        />
+                                    </div>
+                                </div>
+                                <figcaption class="team-list__info">
+                                    <span class="team-list__name">Matthew Dix</span>
+                                    <span class="team-list__position">Graphic Design</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="team-list__item">
+                            <figure class="team-list__figure">
+                                <div class="team-list__background">
+                                    <div class="team-list__img_box">
+                                        <div class="team-list__filter">
+                                            <ul class="team-list__social">
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-facebook"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-twitter"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-pinterest"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-instagram"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <img
+                                            class="team-list__photo"
+                                            srcset="./images/Layer_18.png, ./images/Layer_18@2x.png"
+                                            src="./images/Layer_18.png"
+                                            alt="team_photo"
+                                        />
+                                    </div>
+                                </div>
+                                <figcaption class="team-list__info">
+                                    <span class="team-list__name">Christopher Campbell</span>
+                                    <span class="team-list__position">Branding/UX design</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="team-list__item">
+                            <figure class="team-list__figure">
+                                <div class="team-list__background">
+                                    <div class="team-list__img_box">
+                                        <div class="team-list__filter">
+                                            <ul class="team-list__social">
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-facebook"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-twitter"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-pinterest"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="team-list__social_item">
+                                                    <a class="team-list__social_link" href="#">
+                                                        <svg
+                                                            class="team-list__social_icon"
+                                                            width="30px"
+                                                            height="30px"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg#licon-instagram"
+                                                            ></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <img
+                                            class="team-list__photo"
+                                            srcset="./images/Layer_19.png, ./images/Layer_19@2x.png"
+                                            src="./images/Layer_19.png"
+                                            alt="team_photo"
+                                        />
+                                    </div>
+                                </div>
+                                <figcaption class="team-list__info">
+                                    <span class="team-list__name">Michael Fertig</span>
+                                    <span class="team-list__position">Developer</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__content">
+                    <p class="footer__text">
+                        &#64; 2016 MoGo free PSD template by
+                        <a class="footer__text_link" href="#">Laaqiq</a>
+                    </p>
+                    <div class="footer__form">
+                        <input
+                            class="footer__form__email"
+                            metod="GET"
+                            type="email"
+                            name="user email"
+                            placeholder="Your Email..."
+                        />
+                        <button class="footer__form__button">Subscribe</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

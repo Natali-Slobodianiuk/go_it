@@ -1,0 +1,58 @@
+.services {
+    width: 1200px;
+    margin: 0 auto 95px;
+
+    .services-header {
+        color: $color-title;
+        text-align: center;
+        margin-bottom: 60px;
+
+        &__pretitle {
+            display: block;
+            @include font-style('Kaushan Script', 24px);
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            @include font-style('Montserrat Bold', 30px, uppercase);
+            margin: 0;
+        }
+        &__title:after {
+            display: block;
+            @include after(60px, 4px, solid, $accent-color);
+            margin: 40px auto 0;
+        }
+    }
+    .services-list {
+        @extend %list-style;
+        @include flex-center(hor);
+        flex-wrap: wrap;
+
+        &__item {
+            width: 380px;
+            @include flex-center(hor);
+            margin: 0 0 100px;
+        }
+
+        &__item:nth-last-child(-n + 3) {
+            margin-bottom: 0;
+        }
+
+        &__icon {
+            fill: $main-color;
+            width: 100px;
+        }
+    }
+
+    .services__name {
+        @include font-style('Montserrat', 14px, uppercase);
+        margin: 0 0 20px;
+    }
+    .services__description {
+        @include font-style('Roboto', 15px);
+        line-height: 21px;
+        margin: 0;
+        color: $color-text;
+    }
+}

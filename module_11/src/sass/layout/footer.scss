@@ -1,0 +1,54 @@
+.footer {
+    padding: 10px 0;
+    border-top: 2px solid #e5e5e5;
+
+    &__content {
+        width: 1200px;
+        margin: 0 auto;
+        @include flex-center;
+    }
+
+    &__text {
+        @include font-style('Montserrat', 14px);
+        margin: 0;
+    }
+
+    &__text_link {
+        text-decoration: none;
+        color: $accent-color;
+    }
+}
+
+.footer__form {
+    width: 380px;
+    height: 40px;
+    display: flex;
+
+    input::placeholder {
+        @include font-style('Roboto', 15px);
+        color: #d9d9d9;
+        font-style: italic;
+    }
+
+    &__email {
+        width: 60.5%;
+        height: 100%;
+        border: 2px solid #e5e5e5;
+        border-right: none;
+        padding: 0;
+    }
+
+    &__email:focus {
+        outline-color: #cccccc;
+        outline-width: thin;
+    }
+
+    &__button {
+        @include button(29.5%, 100%, block, pointer, $main-color);
+        border: 2px solid $main-color;
+        padding: 0;
+        @include font-style('Montserrat', 14px, uppercase);
+        font-weight: 600;
+        color: $light-color;
+    }
+}

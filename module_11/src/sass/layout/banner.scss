@@ -1,0 +1,29 @@
+.banner {
+    background-image: linear-gradient($accent-color-gradient, $social-icon-color-gradient),
+        url(../images/Layer15.png);
+    @include bg-image;
+    min-height: 1000px;
+    margin-bottom: 50px;
+}
+.banner-text {
+    color: $light-color;
+    text-align: center;
+    width: 850px;
+    margin: 0 auto 125px;
+
+    &__pretitle {
+        @include font-style('Kaushan Script', 72px);
+        margin-bottom: 60px;
+    }
+    &__title {
+        @include font-style('Montserrat Bold', 150px, uppercase);
+        margin: 0;
+    }
+}
+.banner-text__button {
+    @include font-style('Montserrat', 14px, uppercase);
+    @include button(160px, 40px);
+    border: 3px solid $light-color;
+    color: $light-color;
+    margin: 0 auto;
+}

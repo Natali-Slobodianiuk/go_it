@@ -1,0 +1,39 @@
+.navigation-list {
+    @include flex-center;
+    @extend %list-style;
+
+    .navigation__item {
+        margin-right: 60px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .navigation__link {
+            @include link-style($light-color, 'Montserrat');
+            font-size: 14px;
+            position: relative;
+
+            &:hover {
+                color: $social-icon-color;
+            }
+
+            &:after {
+                display: none;
+                @include after(100%, 4px, solid, $social-icon-color);
+                position: absolute;
+                left: 0;
+                top: 25px;
+            }
+
+            &:hover:after {
+                display: block;
+            }
+        }
+    }
+}
+
+.navigation {
+    @include flex-center;
+    width: 630px;
+}

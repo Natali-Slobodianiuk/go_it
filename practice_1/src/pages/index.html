@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            The following 2 meta tags must come first in the <head>
+            to consistently ensure proper document rendering.
+            Any other head element should come after these tags.
+        -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Page title -->
+        <title>Gulp boilerplate</title>
+
+        <!-- Short description of the document (limit to 150 characters) -->
+        <meta name="description" content="Page description" />
+
+        <!-- Social metatags -->
+        <meta property="og:title" content="Unique page title" />
+        <meta property="og:description" content="Page description" />
+        <meta property="og:image" content="https://www.mywebsite.com/image.jpg" />
+        <meta property="og:image:alt" content="Image description" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mywebsite.com/page" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Theme Color for Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000000" />
+
+        <!-- SVG favicon for modern browsers. -->
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+
+        <!-- The 180×180px icon Apple devices will use if you add the page to your home screen. -->
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+        <!-- Prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs. -->
+        <link rel="canonical" href="https://www.mywebsite.com/page" />
+
+        <!-- inject:css -->
+        <!-- endinject -->
+
+        <link rel="stylesheet" href="./css/index.min.css" />
+
+        <script src="https://kit.fontawesome.com/1fd09514ac.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="scrollup">
+                <a class="scrollup__link" href="#header"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+            <header id="header" class="header">
+                <div class="container">
+                    <div class="header__top-menu">
+                        <a class="logo" href="#">
+                            <img src="./images/logo1.png" alt="logo" height="50" width="150" />
+                        </a>
+                        <div class="header__info">
+                            <ul class="header__info-list">
+                                <li class="header__info-list-item">
+                                    <div class="header__icon-box">
+                                        <svg
+                                            class="header__info-list-icon"
+                                            width="24px"
+                                            height="24px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-envelope"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <div class="header__info-list-box">
+                                        <a
+                                            href="mailto:info@example.com"
+                                            class="header__info-list-link"
+                                            >info@example.com
+                                        </a>
+                                        <span class="header__info-list-text">Mail us</span>
+                                    </div>
+                                </li>
+
+                                <li class="header__info-list-item">
+                                    <div class="header__icon-box">
+                                        <svg
+                                            class="header__info-list-icon"
+                                            width="24px"
+                                            height="24px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-phone"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <div class="header__info-list-box">
+                                        <a href="tel:123456789" class="header__info-list-link"
+                                            >Call For Help:
+                                        </a>
+                                        <span class="header__info-list-text">(123) 456 789</span>
+                                    </div>
+                                </li>
+
+                                <li class="header__info-list-item">
+                                    <div class="header__icon-box">
+                                        <svg
+                                            class="header__info-list-icon"
+                                            width="24px"
+                                            height="24px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <div class="header__info-list-box">
+                                        <a href="#" class="header__info-list-link"
+                                            >Sunday - Friday:</a
+                                        >
+                                        <span class="header__info-list-text">8am - 5pm</span>
+                                    </div>
+                                </li>
+
+                                <li class="header__info-list-item">
+                                    <div class="header__icon-box">
+                                        <svg
+                                            class="header__info-list-icon"
+                                            width="24px"
+                                            height="24px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-location"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <div class="header__info-list-box">
+                                        <a href="#" class="header__info-list-link"
+                                            >56th Ave, Queens, NY
+                                        </a>
+                                        <span class="header__info-list-text">USA</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="header__navigation header__navigation-sticky">
+                <div class="container">
+                    <nav class="header__navigation-box">
+                        <ul class="header__navigation-list">
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">Home</a>
+                                <i class="fa-solid fa-angle-down header__navigation-item-icon"></i>
+                                <ul class="header__submenu header__submenu-home">
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 1</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 2</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 3</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 4</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 5</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 6</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 7</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Home page 8</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">Activity</a>
+                                <i class="fa-solid fa-angle-down header__navigation-item-icon"></i>
+                                <ul class="header__submenu header__submenu-home">
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Activity List 
+                                        </a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Activity List With Sidebar</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Activity List Without Sidebar</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Activity List With Grid</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Activity List With Tabbed</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Activity List With Half Map</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Activity Details</a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Activity Details 1</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Activity Details 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Submit Activity</a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#"> Create Activity</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#"> Edit Activity</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#"> My Activities</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Activity Types</a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">City Travel</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Food Drink</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Cruise</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Attraction</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Group Types</a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Special Groups</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Adult Groups</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Service Types</a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Easy Cancel</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Pick-Up</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Skip Line</a>
+                                            </li>
+                                            </ul>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Locations</a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Venice</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Rome</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Madrid</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">New York</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Languages</a>
+                                        <i class="fa-solid fa-angle-right header__submenu-link-icon"></i>
+                                        <ul class="header__ssubmenu header__ssubmenu-activity-list">
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">English</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Italian</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">Spanish</a>
+                                            </li>
+                                            <li class="header__ssubmenu-item">
+                                                <a class="header__ssubmenu-link" href="#">French</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">Pages</a>
+                                <i class="fa-solid fa-angle-down header__navigation-item-icon"></i>
+                                <ul class="header__submenu header__submenu-home">
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Agents</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Agent</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Agencies</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Pricing</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">FAQ</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#"
+                                            >Edit User Profile</a
+                                        >
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Register</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Change Password</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Login</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Logout</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">404</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">Blog</a>
+                                <i class="fa-solid fa-angle-down header__navigation-item-icon"></i>
+                                <ul class="header__submenu header__submenu-home">
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Blog 1</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Blog 2</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">Guide</a>
+                                <i class="fa-solid fa-angle-down header__navigation-item-icon"></i>
+                                <ul class="header__submenu header__submenu-home">
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Guides</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Guide Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">Contact Us</a>
+                                <i class="fa-solid fa-angle-down header__navigation-item-icon"></i>
+                                <ul class="header__submenu header__submenu-home">
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Contact Us</a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a class="header__submenu-link" href="#">Contact Us 2</a>
+                                    </li>
+                            </li>
+                            
+                            </ul>
+                        </ul>
+
+                        <div class="header__account">
+                            <ul class="header__account-list">
+                                <li class="header__account-list-item">
+                                    <a class="header__account-list-link" href="#">
+                                        <svg
+                                            class="header__account-list-icon"
+                                            width="18px"
+                                            height="18px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-shopping-cart"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="header__account-list-item">
+                                    <a href="#">
+                                        <svg
+                                            class="header__account-list-icon"
+                                            width="18px"
+                                            height="18px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-user"
+                                            ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="header__account-button">
+                                <svg class="header__account-button-icon" width="16px" height="16px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-add"></use>
+                                </svg>
+                                Add Tour
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <section class="banner">
+                <div class="banner__filter">
+                    <div class="banner__text">
+                        <span class="banner__text-pretext">New Activity</span>
+                        <h3 class="banner__text-title">Venice City Tour</h3>
+                        <span class="banner__text-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Dui...</span
+                        >
+                    </div>
+                    <button class="banner__button">Details</button>
+                    <button class="banner__button-left banner__button-naw">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="banner__button-right banner__button-naw">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <form class="banner__form" action="GET">
+                        <div class="banner__form-search-box">
+                            <label for="search" class="banner__form-search-label">
+                                <svg class="banner__form-search-icon" width="16px" height="16px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-search"></use></svg
+                            ></label>
+                            <input
+                                class="banner__form-search"
+                                type="search"
+                                id="search"
+                                name="search"
+                                placeholder="Where are you going?"
+                            />
+                        </div>
+                        <select
+                            class="banner__form-select banner__form-select-location"
+                            name="Location"
+                        >
+                            <option value="value1" selected>Location</option>
+                            <option value="value2">Dubai</option>
+                            <option value="value3">&#187; Dubai</option>
+                            <option value="value4">England</option>
+                            <option value="value5">&#187; London</option>
+                            <option value="value6">France</option>
+                            <option value="value7">&#187; Paris</option>
+                            <option value="value8">Holland</option>
+                            <option value="value9">&#187; Amsterdam</option>
+                            <option value="value10">Italy</option>
+                            <option value="value11">&#187; Rome</option>
+                            <option value="value12">&#187; Venice</option>
+                            <option value="value13">Spain</option>
+                            <option value="value14">&#187; Madrid</option>
+                            <option value="value15">USA</option>
+                            <option value="value16">&#187; New York</option>
+                        </select>
+
+                        <select
+                            class="banner__form-select banner__form-select-tourtype"
+                            name="Tour type"
+                        >
+                            <option value="value1" selected>Tour type</option>
+                            <option value="value2">Adventure Tours</option>
+                            <option value="value3">Children's Activities</option>
+                            <option value="value4">Family Friendly</option>
+                            <option value="value5">Guided Tours</option>
+                            <option value="value6">Self-Guided</option>
+                            <option value="value7">Sightseeing Tours</option>
+                            <option value="value8">Special Interest Tours</option>
+                            <option value="value9">Theme Tours</option>
+                        </select>
+
+                        <select
+                            class="banner__form-select banner__form-select-durations"
+                            name="Durations: any"
+                        >
+                            <option value="value1" selected>Durations: any</option>
+                            <option value="value2">0-3 hours</option>
+                            <option value="value3">3-5 hours</option>
+                            <option value="value4">5-7 hours</option>
+                            <option value="value5">Full day (7+ hours)</option>
+                        </select>
+
+                        <button class="banner__form-button">
+                            <svg class="banner__form-button-icon" width="16px" height="16px">
+                                <use href="./images/svg/symbol-defs.svg#icon-search"></use>
+                            </svg>
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="activities">
+                <div class="activities__text">
+                    <p2 class="activities__watermark">Activities</p2>
+                    <span class="activities__text-pretext">Guided Activities</span>
+                    <h3 class="activities__text-title">
+                        Check out our exclusive activities with a guide.
+                    </h3>
+                </div>
+                <div class="container">
+                    <ul class="activities__list">
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity24.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 90</span>
+                                    <span class="new-price">&#36; 80</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">London Private Tour</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">3 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">London</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-credit-card-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Easy Cancel</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-user"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Live Guide</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-2-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Fred Mercury</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Demo Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity23.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 90</span>
+                                    <span class="new-price">&#36; 80</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">Paris Live Guided Tour</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">4 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Paris</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-credit-card-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Easy Cancel</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-running-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Skip Line</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-4-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Anita May</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Example Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity22.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 60</span>
+                                    <span class="new-price">&#36; 40</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">Amsterdam: Walking Tour</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">2 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Amsterdam</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-user"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Live Guide</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-running-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Skip Line</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-7-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Melinda Joe</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Demo Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity25.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 120</span>
+                                    <span class="new-price">&#36; 100</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">Dubai Private Tour</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">2 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Dubai</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-credit-card-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Easy Cancel</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-car-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Pick-up</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-11-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Anna Truly</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Example Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity36.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 80</span>
+                                    <span class="new-price">&#36; 50</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">Rome: Street Food Tour</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">2 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Rome</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-credit-card-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Easy Cancel</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-car-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Pick-up</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-1-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Henry Frank</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Example Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity33.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 90</span>
+                                    <span class="new-price">&#36; 60</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">St. Mark's Basilica Tour</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">2 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Venice</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-credit-card-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Easy Cancel</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-car-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Pick-up</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-6-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Ernest Newton</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Example Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity32.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 160</span>
+                                    <span class="new-price">&#36; 120</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">Barcelona: Private Tour</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">4 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Madrid</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-ticket-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Instant Conf.</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-car-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Pick-up</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-2-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Fred Mercury</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Demo Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="activities__list-item">
+                            <div class="activities__list-img-box">
+                                <img
+                                    class="activities__list-img"
+                                    src="./images/activity31.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="activities__list-price">
+                                <span class="price">Price:</span>
+                                <div class="activities__list-cost">
+                                    <span class="old-price">&#36; 120</span>
+                                    <span class="new-price">&#36; 90</span>
+                                </div>
+                            </div>
+                            <a class="activities__list-link" href="#">Madrid: Live Flamenco</a>
+                            <ul class="activities__list-info">
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">2 hours</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs1.svg#icon-location1"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Madrid</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-car-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Pick-up</span>
+                                </li>
+                                <li class="activities__list-info-item">
+                                    <div class="activities__list-icon-box">
+                                        <svg
+                                            class="activities__list-info-icon"
+                                            width="13px"
+                                            height="13px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-running-mini"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <span class="activities__list-info-text">Skip Line</span>
+                                </li>
+                            </ul>
+                            <div class="activities__list-guide">
+                                <div class="activities__list-guide-box">
+                                    <img
+                                        class="activities__list-guide-img"
+                                        src="./images/agent-2-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="activities__list-guide-link"
+                                            >Fred Mercury</a
+                                        >
+                                        <span class="activities__list-guide-firm"
+                                            >Demo Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="activities__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-arrow-right activities__list-guide-button-icon-2"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="categories">
+                <div class="categories__text">
+                    <p2 class="categories__watermark">Categories</p2>
+                    <span class="categories__text-pretext">Top Categories</span>
+                    <h3 class="categories__text-title">Browse By Category</h3>
+                </div>
+                <div class="container">
+                    <ul class="categories__list">
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-ticket"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">Attraction</a>
+                        </li>
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-flip-flops"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">Beach</a>
+                        </li>
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-backpack"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">Camping</a>
+                        </li>
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-caravan"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">Caravan</a>
+                        </li>
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-vespa"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">City Travel</a>
+                        </li>
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-cruise"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">Cruise</a>
+                        </li>
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-diving"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">Diving</a>
+                        </li>
+                        <li class="categories__list-item">
+                            <div class="categories__list-icon-box">
+                                <svg class="categories__list-info-icon" width="60px" height="60px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-tea"></use>
+                                </svg>
+                            </div>
+                            <a class="categories__list-link" href="#">Food Drinks</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="special">
+                <div class="container">
+                    <div class="special__header">
+                        <div class="special__header-text">
+                            <span class="special__header-pretext">Special Group Activities</span>
+                            <h3 class="special__header-title">
+                                Special activities we have prepared for Special Groups
+                            </h3>
+                        </div>
+                        <div class="special__header-button-box">
+                            <button class="special__header-button">
+                                <i class="fa-solid fa-arrow-left special__header-button-icon"></i>
+                            </button>
+                            <button class="special__header-button">
+                                <i class="fa-solid fa-arrow-right special__header-button-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="special__list">
+                        <li class="special__list-item">
+                            <div class="special__list-img-box">
+                                <img
+                                    class="special__list-img"
+                                    src="./images/activity23.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="special__list-price">
+                                <span class="price">Price:</span>
+                                <div class="special__list-cost">
+                                    <span class="old-price">&#36; 90</span>
+                                    <span class="new-price">&#36; 80</span>
+                                </div>
+                            </div>
+                            <a class="special__list-link" href="#">Paris Live Guided Tour</a>
+
+                            <div class="special__list-guide">
+                                <div class="special__list-guide-box">
+                                    <img
+                                        class="special__list-guide-img"
+                                        src="./images/agent-4-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="special__list-guide-link">Anita May</a>
+                                        <span class="special__list-guide-firm"
+                                            >Example Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="special__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right special__list-guide-button-icon"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="special__list-item">
+                            <div class="special__list-img-box">
+                                <img
+                                    class="special__list-img"
+                                    src="./images/activity22.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="special__list-price">
+                                <span class="price">Price:</span>
+                                <div class="special__list-cost">
+                                    <span class="old-price">&#36; 60</span>
+                                    <span class="new-price">&#36; 40</span>
+                                </div>
+                            </div>
+                            <a class="special__list-link" href="#">Amsterdam: Walking Tour</a>
+                            <div class="special__list-guide">
+                                <div class="special__list-guide-box">
+                                    <img
+                                        class="special__list-guide-img"
+                                        src="./images/agent-7-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="special__list-guide-link">Melinda Joe</a>
+                                        <span class="special__list-guide-firm"
+                                            >Demo Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="special__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right special__list-guide-button-icon"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="special__list-item">
+                            <div class="special__list-img-box">
+                                <img
+                                    class="special__list-img"
+                                    src="./images/activity25.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="special__list-price">
+                                <span class="price">Price:</span>
+                                <div class="special__list-cost">
+                                    <span class="old-price">&#36; 120</span>
+                                    <span class="new-price">&#36; 100</span>
+                                </div>
+                            </div>
+                            <a class="special__list-link" href="#">Dubai Private Tour</a>
+                            <div class="special__list-guide">
+                                <div class="special__list-guide-box">
+                                    <img
+                                        class="special__list-guide-img"
+                                        src="./images/agent-11-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="special__list-guide-link">Anna Truly</a>
+                                        <span class="special__list-guide-firm"
+                                            >Example Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="special__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right special__list-guide-button-icon"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="special__list-item">
+                            <div class="special__list-img-box">
+                                <img
+                                    class="special__list-img"
+                                    src="./images/activity37.jpg"
+                                    alt="img"
+                                    width="230"
+                                    height="153"
+                                />
+                            </div>
+                            <div class="special__list-price">
+                                <span class="price">Price:</span>
+                                <div class="special__list-cost">
+                                    <span class="old-price">&#36; 80</span>
+                                    <span class="new-price">&#36; 60</span>
+                                </div>
+                            </div>
+                            <a class="special__list-link" href="#">Doge Palace Ticket</a>
+                            <div class="special__list-guide">
+                                <div class="special__list-guide-box">
+                                    <img
+                                        class="special__list-guide-img"
+                                        src="./images/agent-5-150x150.jpg"
+                                        alt="img-guide"
+                                        width="35"
+                                        height="35"
+                                    />
+                                    <div class="guide-info">
+                                        <a href="#" class="special__list-guide-link">Robert Rich</a>
+                                        <span class="special__list-guide-firm"
+                                            >Demo Travel Inc</span
+                                        >
+                                    </div>
+                                </div>
+                                <button class="special__list-guide-button">
+                                    <i
+                                        class="fa-solid fa-arrow-right special__list-guide-button-icon"
+                                    ></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="special__button">
+                        All Activities <i class="fa-solid fa-arrow-right special__button-icon"></i>
+                    </button>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__box">
+                        <div class="footer__social">
+                            <img
+                                class="footer__social-logo"
+                                src="./images/logo2.png"
+                                alt="logo"
+                                width="200"
+                                height="66"
+                            />
+                            <p class="footer__social-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                perspiciatis sit voluptas quae
+                            </p>
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#"
+                                        ><svg
+                                            class="footer__social-icon"
+                                            width="16px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-twitter"
+                                            ></use>
+                                        </svg>
+                                        <span class="visually-hidden">Twitter</span></a
+                                    >
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#"
+                                        ><svg
+                                            class="footer__social-icon"
+                                            width="16px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-facebook"
+                                            ></use>
+                                        </svg>
+                                        <span class="visually-hidden">Facebook</span></a
+                                    >
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#"
+                                        ><svg
+                                            class="footer__social-icon"
+                                            width="14px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-linkedin"
+                                            ></use>
+                                        </svg>
+                                        <span class="visually-hidden">Linkedin</span></a
+                                    >
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#"
+                                        ><svg
+                                            class="footer__social-icon"
+                                            width="16px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-pinterest"
+                                            ></use>
+                                        </svg>
+                                        <span class="visually-hidden">Pinterest</span></a
+                                    >
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#"
+                                        ><svg
+                                            class="footer__social-icon"
+                                            width="18px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-youtube"
+                                            ></use>
+                                        </svg>
+                                        <span class="visually-hidden">Youtube</span></a
+                                    >
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#"
+                                        ><svg
+                                            class="footer__social-icon"
+                                            width="14px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-instagram"
+                                            ></use>
+                                        </svg>
+                                        <span class="visually-hidden">Instagram</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <nav class="footer__menu">
+                            <h4 class="footer__title">Quick Links</h4>
+                            <div class="footer__menu-box">
+                                <ul class="footer__menu-list1">
+                                    <li class="footer__menu-item">
+                                        <a class="footer__menu-link" href="#">About</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a class="footer__menu-link" href="#">Activities</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a class="footer__menu-link" href="#">Contact Us</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a class="footer__menu-link" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer__menu-list2">
+                                    <li class="footer__menu-item">
+                                        <a class="footer__menu-link" href="#">Register</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a class="footer__menu-link" href="#">Guides</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a class="footer__menu-link" href="#">Flights</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="footer__blog">
+                            <h4 class="footer__title">Blog And News</h4>
+                            <ul class="footer__blog-list">
+                                <li class="footer__blog-item">
+                                    <img
+                                        class="footer__blog-img"
+                                        src="./images/blog-lrg-3.jpg"
+                                        alt="img-blog"
+                                    />
+                                    <div class="footer__blog-caption">
+                                        <a class="footer__blog-link" href="#"
+                                            >7 Activities in Venice</a
+                                        >
+                                        <span class="footer__blog-data">Tue Dec 7</span>
+                                    </div>
+                                </li>
+                                <li class="footer__blog-item">
+                                    <img
+                                        class="footer__blog-img"
+                                        src="./images/blog-lrg-2.jpg"
+                                        alt="img-blog"
+                                    />
+                                    <div class="footer__blog-caption">
+                                        <a class="footer__blog-link" href="#"
+                                            >5 Things to Do in Venice</a
+                                        >
+                                        <span class="footer__blog-data">Tue Dec 7</span>
+                                    </div>
+                                </li>
+                                <li class="footer__blog-item">
+                                    <img
+                                        class="footer__blog-img"
+                                        src="./images/blog-lrg-1.jpg"
+                                        alt="img-blog"
+                                    />
+                                    <div class="footer__blog-caption">
+                                        <a class="footer__blog-link" href="#"
+                                            >Places to See in Venice</a
+                                        >
+                                        <span class="footer__blog-data">Tue Dec 7</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__contacts">
+                            <h4 class="footer__title">Contact Information</h4>
+                            <ul class="footer__contacts-list">
+                                <li class="footer__contacts-item">
+                                    <div class="footer__contacts-box">
+                                        <svg
+                                            class="footer__contacts-list-icon"
+                                            width="16px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-location"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <div class="footer__contacts-list-box">
+                                        <a href="#" class="footer__contacts-list-link"
+                                            >1489 3rd Ave, Newyork, USA
+                                        </a>
+                                        <span class="footer__contacts-list-text-details"
+                                            >Meet Us In Office</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="footer__contacts-item">
+                                    <div class="footer__contacts-box">
+                                        <svg
+                                            class="footer__contacts-list-icon"
+                                            width="16px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-mailbox"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <div class="footer__contacts-list-box">
+                                        <a
+                                            href="mailto:info@example.com"
+                                            class="footer__contacts-list-link"
+                                            >info@example.com
+                                        </a>
+                                        <span class="footer__contacts-list-text-details"
+                                            >Drop Us A Line</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="footer__contacts-item">
+                                    <div class="footer__contacts-box">
+                                        <svg
+                                            class="footer__contacts-list-icon"
+                                            width="16px"
+                                            height="16px"
+                                        >
+                                            <use
+                                                href="./images/svg/symbol-defs.svg#icon-clock-svgrepo"
+                                            ></use>
+                                        </svg>
+                                    </div>
+                                    <div class="footer__contacts-list-box">
+                                        <span class="footer__contacts-list-text"
+                                            >9 AM - 5 PM (Sun-Fri)</span
+                                        >
+                                        <span class="footer__contacts-list-text-details"
+                                            >Office Hour</span
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="footer__contacts-tel-box">
+                                <div class="footer__contacts-box-tel">
+                                    <svg
+                                        class="footer__contacts-list-icon-tel"
+                                        width="16px"
+                                        height="16px"
+                                    >
+                                        <use href="./images/svg/symbol-defs.svg#icon-phone1"></use>
+                                    </svg>
+                                </div>
+                                <div class="footer__contacts-list-box-tel">
+                                    <a href="tel:123456789" class="footer__contacts-link-tel"
+                                        >123 456 789
+                                    </a>
+                                    <span class="footer__contacts-list-text-tel">Make A Call</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

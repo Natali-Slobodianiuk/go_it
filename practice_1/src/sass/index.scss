@@ -1,0 +1,21 @@
+/*
+ * Import all top level partials here
+ */
+
+@import 'vendors/normalize.scss';
+@import 'utils/mixins.scss';
+
+@import 'base/fonts.scss';
+@import 'base/scaffolding.scss';
+
+@import 'utils/variables.scss';
+@import 'utils/placeholder.scss';
+
+@import 'components/scroll.scss';
+
+@import 'layout/header.scss';
+@import 'layout/banner.scss';
+@import 'layout/activities.scss';
+@import 'layout/categories.scss';
+@import 'layout/special.scss';
+@import 'layout/footer.scss';

@@ -1,0 +1,85 @@
+.categories {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(#f9f6f6, 0.7) url(../images/category-bg.png);
+    background-repeat: repeat;
+}
+
+.categories__watermark {
+    @include font-st('Roboto 900', 100px, $watermark-color);
+    opacity: 0.04;
+    position: absolute;
+    top: -20px;
+    transform: translate(-50%, -50%);
+}
+
+.categories__text {
+    width: 650px;
+    margin: 0 auto 50px;
+    text-align: center;
+    position: relative;
+
+    &-pretext {
+        @include font-st('Roboto 900', 18px, $main-color);
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    &-title {
+        @include font-st('Roboto 900', 40px, $max-dark-color);
+        line-height: 60px;
+        margin: 0;
+    }
+}
+
+.categories__list {
+    @extend %list-style;
+    @include flex-center;
+    flex-wrap: wrap;
+
+    &-item {
+        width: 270px;
+        height: 224px;
+        @include button-border(10px, solid, $light-color, 5px);
+        background-color: $background-categories;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        margin-bottom: 30px;
+    }
+
+    &-item:nth-last-child(-n + 4) {
+        margin-bottom: 100px;
+    }
+
+    &-item:hover {
+        background-color: $light-color;
+    }
+
+    &-icon-box {
+        width: 90px;
+        height: 90px;
+        background-color: $light-color;
+        border-radius: 50px;
+        @include flex-center(ver);
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &-info-icon {
+        fill: $main-color;
+        transition: all 1s ease;
+    }
+
+    &-link {
+        @include link-style($max-dark-color, 'Roboto 700', none, none);
+        font-size: 20px;
+    }
+}
+
+.categories__list-item:hover .categories__list-info-icon {
+    // transform: scaleX(-1);
+    transform: rotateY(360deg);
+}

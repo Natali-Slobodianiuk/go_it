@@ -1,0 +1,64 @@
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: quote($font-name);
+        src: url(#{$path}.woff) format('woff'), url(#{$path}.woff2) format('woff2');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin font-style($font-name, $size, $t-trans: none) {
+    font-family: $font-name;
+    font-size: $size;
+    text-transform: $t-trans;
+}
+
+@mixin font-st($font-name, $size, $color) {
+    font-family: $font-name;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin button($width, $height, $display: block, $cursor: pointer, $color: transparent) {
+    width: $width;
+    height: $height;
+    display: $display;
+    cursor: $cursor;
+    background-color: $color;
+}
+
+@mixin button-border($border-size, $border-type, $border-color, $border-radius: 0) {
+    border: $border-size $border-type $border-color;
+    border-radius: $border-radius;
+}
+
+@mixin link-style($color, $font-name, $t-dec: none, $t-trans: uppercase) {
+    color: $color;
+    font-family: $font-name;
+    text-decoration: $t-dec;
+    text-transform: $t-trans;
+}
+
+@mixin after($width, $border-size, $border-type, $border-color, $content: '') {
+    content: $content;
+    width: $width;
+    border-bottom: $border-size $border-type $border-color;
+}
+
+@mixin flex-center($type: 'all') {
+    display: flex;
+    @if $type== 'all' {
+        justify-content: space-between;
+        align-items: center;
+    } @else if $type== 'hor' {
+        justify-content: space-between;
+    } @else if $type== 'ver' {
+        align-items: center;
+    }
+}
+
+@mixin bg-image($size: cover, $repeat: no-repeat, $pos: center) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $pos;
+}

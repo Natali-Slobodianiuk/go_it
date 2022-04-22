@@ -1,0 +1,247 @@
+.footer {
+    min-height: 470px;
+    background-color: $background-footer;
+    padding-top: 80px;
+
+    &__box {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include font-st('Roboto 700', 22px, $light-color);
+        margin: 0 0 25px;
+    }
+}
+
+.footer__social {
+    width: 300px;
+    padding: 0 15px;
+
+    &-logo {
+        margin-bottom: 12px;
+    }
+
+    &-text {
+        @include font-st('Roboto 500', 16px, $menu-light-color);
+        line-height: 24px;
+        margin: 0 0 12px;
+    }
+
+    &-list {
+        @extend %list-style;
+        @include flex-center(ver);
+        border-bottom: 1px solid $border-social-color;
+        padding-bottom: 25px;
+    }
+
+    &-item {
+        width: 30px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.18);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: all 0.2s ease;
+    }
+
+    &-icon {
+        fill: $social-color;
+        transition: all 0.2s ease;
+    }
+
+    &-item:hover {
+        background-color: $main-color;
+    }
+
+    &-item:hover .footer__social-icon {
+        fill: $light-color;
+    }
+
+    &-link {
+        font-size: 0;
+    }
+}
+
+.visually-hidden {
+    @extend %visually-hidden;
+}
+
+.footer__menu {
+    width: 300px;
+    padding: 0 15px;
+
+    &-box {
+        display: flex;
+    }
+
+    &-list1,
+    &-list2 {
+        @extend %list-style;
+    }
+
+    &-list1 {
+        margin-right: 55px;
+    }
+
+    &-item {
+        margin-bottom: 5px;
+    }
+
+    &-link {
+        @include link-style(#9d9d9d, 'Roboto 500', none, none);
+        font-size: 14px;
+    }
+
+    &-link::before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: $hover-main-color;
+        margin-right: 10px;
+    }
+}
+
+.footer__blog {
+    width: 300px;
+    padding: 0 15px;
+
+    &-list {
+        @extend %list-style;
+    }
+
+    &-item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    &-item {
+        @include flex-center(ver);
+    }
+
+    &-img {
+        width: 75px;
+        height: 65px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-right: 12px;
+    }
+
+    &-link {
+        @include link-style(#95999e, 'Roboto 500', none, none);
+        font-size: 16px;
+        display: block;
+        margin-bottom: 5px;
+        transition: all 0.2s ease;
+    }
+
+    &-link:hover {
+        color: $main-color;
+    }
+
+    &-data {
+        @include font-st('Roboto 500', 16px, #95999e);
+    }
+}
+
+.footer__contacts {
+    width: 300px;
+    padding: 0 15px;
+
+    &-list {
+        @extend %list-style;
+        margin-bottom: 6px;
+    }
+
+    &-item {
+        display: flex;
+    }
+
+    &-item:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &-box {
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include button-border(1px, solid, $main-color, 50px);
+        margin-right: 10px;
+        transition: all 0.3s ease;
+    }
+
+    &-list-icon {
+        fill: $main-color;
+        transition: all 0.3s ease;
+    }
+
+    &-item:hover .footer__contacts-box {
+        background-color: $main-color;
+    }
+
+    &-item:hover .footer__contacts-list-icon {
+        fill: $light-color;
+    }
+
+    &-list-link {
+        @include link-style($light-color, 'Roboto 500', none, none);
+        font-size: 15px;
+    }
+
+    &-list-text {
+        @include font-st('Roboto 500', 16px, $light-color);
+    }
+
+    &-list-text-details {
+        @include font-st('Roboto 500', 14px, #dccfcf);
+        line-height: 30px;
+    }
+
+    &-list-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-tel-box {
+        width: 270px;
+        height: 130px;
+        background-color: rgba(255, 255, 255, 0.15);
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-box-tel {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 15px;
+        background-color: rgba(255, 255, 255, 0.14);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-list-icon-tel {
+        fill: rgba(255, 255, 255, 0.47);
+    }
+
+    &-link-tel {
+        @include link-style($hover-main-color, 'Roboto 700', none, none);
+        font-size: 20px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &-list-text-tel {
+        @include font-st('Roboto 700', 15px, #ffffff99);
+    }
+}

@@ -1,6 +1,5 @@
 .categories {
     padding-top: 100px;
-    margin-bottom: 100px;
     background: rgba(#f9f6f6, 0.7) url(../images/category-bg.png);
     background-repeat: repeat;
 }
@@ -10,6 +9,7 @@
     opacity: 0.04;
     position: absolute;
     top: -20px;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -39,7 +39,6 @@
 
     &-item {
         width: 270px;
-        height: 224px;
         @include button-border(10px, solid, $light-color, 5px);
         background-color: $background-categories;
         display: flex;
@@ -48,6 +47,7 @@
         justify-content: center;
         transition: all 0.5s ease;
         margin-bottom: 30px;
+        padding: 50px 0;
     }
 
     &-item:nth-last-child(-n + 4) {
@@ -62,7 +62,7 @@
         width: 90px;
         height: 90px;
         background-color: $light-color;
-        border-radius: 50px;
+        border-radius: 50%;
         @include flex-center(ver);
         justify-content: center;
         margin-bottom: 20px;

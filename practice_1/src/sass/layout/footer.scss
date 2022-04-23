@@ -15,10 +15,12 @@
     }
 }
 
-.footer__social {
+.footer__content {
     width: 300px;
     padding: 0 15px;
+}
 
+.footer__social {
     &-logo {
         margin-bottom: 12px;
     }
@@ -71,19 +73,16 @@
 }
 
 .footer__menu {
-    width: 300px;
-    padding: 0 15px;
-
     &-box {
         display: flex;
     }
 
-    &-list1,
-    &-list2 {
+    &-list-info,
+    &-list-user-info {
         @extend %list-style;
     }
 
-    &-list1 {
+    &-list-info {
         margin-right: 55px;
     }
 
@@ -96,7 +95,7 @@
         font-size: 14px;
     }
 
-    &-link::before {
+    &-item::before {
         content: '';
         display: inline-block;
         width: 8px;
@@ -107,9 +106,6 @@
 }
 
 .footer__blog {
-    width: 300px;
-    padding: 0 15px;
-
     &-list {
         @extend %list-style;
     }
@@ -148,9 +144,6 @@
 }
 
 .footer__contacts {
-    width: 300px;
-    padding: 0 15px;
-
     &-list {
         @extend %list-style;
         margin-bottom: 6px;
@@ -209,20 +202,16 @@
 
     &-tel-box {
         width: 270px;
-        height: 130px;
         background-color: rgba(255, 255, 255, 0.15);
         text-align: center;
         border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding: 20px 0;
     }
 
     &-box-tel {
         width: 30px;
         height: 30px;
-        margin-bottom: 15px;
+        margin: 0 auto 15px;
         background-color: rgba(255, 255, 255, 0.14);
         border-radius: 50px;
         display: flex;

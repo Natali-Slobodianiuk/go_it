@@ -1,5 +1,5 @@
 .special {
-    margin-bottom: 80px;
+    padding: 100px 0 80px;
 }
 
 .special__header {
@@ -23,8 +23,7 @@
     }
 
     &-button-box {
-        width: 132px;
-        @include flex-center(hor);
+        display: flex;
     }
 
     &-button {
@@ -32,6 +31,7 @@
         @include button-border(1px, solid, $main-color, 50px);
         color: $menu-light-color;
         transition: all 0.5s ease;
+        margin-left: 10px;
     }
 
     &-button:hover {

@@ -47,9 +47,7 @@
 
     <body>
         <div class="wrapper">
-            <div class="scrollup">
                 <a class="scrollup__link" href="#header"><i class="fa-solid fa-angle-up"></i></a>
-            </div>
             <header id="header" class="header">
                 <div class="container">
                     <div class="header__top-menu">
@@ -57,8 +55,8 @@
                             <img src="./images/logo1.png" alt="logo" height="50" width="150" />
                         </a>
                         <div class="header__info">
-                            <ul class="header__info-list">
-                                <li class="header__info-list-item">
+                            <div class="header__info-list">
+                                <div class="header__info-list-item">
                                     <div class="header__icon-box">
                                         <svg
                                             class="header__info-list-icon"
@@ -78,9 +76,9 @@
                                         </a>
                                         <span class="header__info-list-text">Mail us</span>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="header__info-list-item">
+                                <div class="header__info-list-item">
                                     <div class="header__icon-box">
                                         <svg
                                             class="header__info-list-icon"
@@ -98,9 +96,9 @@
                                         </a>
                                         <span class="header__info-list-text">(123) 456 789</span>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="header__info-list-item">
+                                <div class="header__info-list-item">
                                     <div class="header__icon-box">
                                         <svg
                                             class="header__info-list-icon"
@@ -118,9 +116,9 @@
                                         >
                                         <span class="header__info-list-text">8am - 5pm</span>
                                     </div>
-                                </li>
+                                </div>
 
-                                <li class="header__info-list-item">
+                                <div class="header__info-list-item">
                                     <div class="header__icon-box">
                                         <svg
                                             class="header__info-list-icon"
@@ -138,8 +136,8 @@
                                         </a>
                                         <span class="header__info-list-text">USA</span>
                                     </div>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -398,8 +396,8 @@
                         </ul>
 
                         <div class="header__account">
-                            <ul class="header__account-list">
-                                <li class="header__account-list-item">
+                            <div class="header__account-list">
+                                <div class="header__account-list-item">
                                     <a class="header__account-list-link" href="#">
                                         <svg
                                             class="header__account-list-icon"
@@ -411,8 +409,8 @@
                                             ></use>
                                         </svg>
                                     </a>
-                                </li>
-                                <li class="header__account-list-item">
+                                </div>
+                                <div class="header__account-list-item">
                                     <a href="#">
                                         <svg
                                             class="header__account-list-icon"
@@ -424,8 +422,8 @@
                                             ></use>
                                         </svg>
                                     </a>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                             <button class="header__account-button">
                                 <svg class="header__account-button-icon" width="16px" height="16px">
                                     <use href="./images/svg/symbol-defs.svg#icon-add"></use>
@@ -527,13 +525,13 @@
             </section>
 
             <section class="activities">
-                <div class="activities__text">
-                    <p2 class="activities__watermark">Activities</p2>
-                    <span class="activities__text-pretext">Guided Activities</span>
-                    <h3 class="activities__text-title">
+                <header class="activities__text">
+                    <div class="activities__watermark">Activities</div>
+                    <h2 class="activities__text-pretext">Guided Activities</h2>
+                    <h4 class="activities__text-title">
                         Check out our exclusive activities with a guide.
-                    </h3>
-                </div>
+                    </h4>
+                </header>
                 <div class="container">
                     <ul class="activities__list">
                         <li class="activities__list-item">
@@ -1373,9 +1371,9 @@
             </section>
             <section class="categories">
                 <div class="categories__text">
-                    <p2 class="categories__watermark">Categories</p2>
-                    <span class="categories__text-pretext">Top Categories</span>
-                    <h3 class="categories__text-title">Browse By Category</h3>
+                    <div class="categories__watermark">Categories</div>
+                    <h2 class="categories__text-pretext">Top Categories</h2>
+                    <h4 class="categories__text-title">Browse By Category</h4>
                 </div>
                 <div class="container">
                     <ul class="categories__list">
@@ -1450,10 +1448,10 @@
                 <div class="container">
                     <div class="special__header">
                         <div class="special__header-text">
-                            <span class="special__header-pretext">Special Group Activities</span>
-                            <h3 class="special__header-title">
+                            <h2 class="special__header-pretext">Special Group Activities</h2>
+                            <h4 class="special__header-title">
                                 Special activities we have prepared for Special Groups
-                            </h3>
+                            </h4>
                         </div>
                         <div class="special__header-button-box">
                             <button class="special__header-button">
@@ -1638,9 +1636,9 @@
             </section>
 
             <footer class="footer">
-                <div class="container">
-                    <div class="footer__box">
-                        <div class="footer__social">
+               
+                    <div class="footer__box container">
+                        <div class="footer__social footer__content">
                             <img
                                 class="footer__social-logo"
                                 src="./images/logo2.png"
@@ -1739,10 +1737,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <nav class="footer__menu">
+                        <nav class="footer__menu footer__content">
                             <h4 class="footer__title">Quick Links</h4>
                             <div class="footer__menu-box">
-                                <ul class="footer__menu-list1">
+                                <ul class="footer__menu-list-info">
                                     <li class="footer__menu-item">
                                         <a class="footer__menu-link" href="#">About</a>
                                     </li>
@@ -1756,7 +1754,7 @@
                                         <a class="footer__menu-link" href="#">Blog</a>
                                     </li>
                                 </ul>
-                                <ul class="footer__menu-list2">
+                                <ul class="footer__menu-list-user-info">
                                     <li class="footer__menu-item">
                                         <a class="footer__menu-link" href="#">Register</a>
                                     </li>
@@ -1769,7 +1767,7 @@
                                 </ul>
                             </div>
                         </nav>
-                        <div class="footer__blog">
+                        <div class="footer__blog footer__content">
                             <h4 class="footer__title">Blog And News</h4>
                             <ul class="footer__blog-list">
                                 <li class="footer__blog-item">
@@ -1813,7 +1811,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__contacts">
+                        <div class="footer__contacts footer__content">
                             <h4 class="footer__title">Contact Information</h4>
                             <ul class="footer__contacts-list">
                                 <li class="footer__contacts-item">
@@ -1901,7 +1899,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </footer>
         </div>
     </body>

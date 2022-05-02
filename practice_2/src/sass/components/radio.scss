@@ -1,0 +1,49 @@
+.color-input[type='radio'] {
+    display: none;
+
+    &:checked {
+        + .box {
+            border: 0.1rem solid rgba(35, 35, 35, 0.55);
+            box-shadow: 2px 2px 4px #e0e0e0;
+            transform: scale(0.95);
+        }
+    }
+}
+
+.box {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.color-red-box {
+    background-color: red;
+    box-shadow: 2px 2px 4px #e0e0e0;
+}
+
+.color-marsala-box {
+    background-color: brown;
+    box-shadow: 2px 2px 4px #e0e0e0;
+}
+
+.size-input[type='radio'] {
+    display: none;
+
+    &:checked {
+        + .box {
+            background-color: $dark-color;
+            .size-number {
+                color: $light-color;
+            }
+        }
+    }
+}
+
+.size-box {
+    border: 1px solid rgba(35, 35, 35, 0.55);
+    @include font-st('Poppins', 18px, $dark-color);
+    text-align: center;
+    line-height: 40px;
+}

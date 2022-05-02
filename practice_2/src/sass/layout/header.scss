@@ -1,0 +1,340 @@
+.header__top-button,
+.header__top-text,
+.header__info-contacts,
+.menu {
+    display: none;
+}
+
+.header__top {
+    background-color: $main-color;
+
+    &-box {
+        padding-top: 10px;
+        padding-bottom: 12px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-wish {
+        display: flex;
+    }
+
+    &-item::after {
+        @include after-right(auto, 1px, solid, $light-color);
+        padding-right: 10px;
+        margin-right: 10px;
+        opacity: 0.5;
+    }
+
+    &-item:nth-child(2)::after {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    &-link {
+        @include link-style($light-color, 'Poppins', none, none);
+        font-size: 14px;
+    }
+}
+
+.header__info {
+    @include flex-center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &-box {
+        border-bottom: 1px solid #e9e9e9;
+    }
+
+    &-menu-link {
+        margin-right: 15px;
+    }
+
+    &-menu-link:last-child {
+        margin: 0;
+    }
+
+    &-user-m {
+        text-align: right;
+    }
+    &-user-link {
+        margin-right: 15px;
+    }
+
+    &-user-link:last-child {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__top {
+        &-box {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-text {
+            display: flex;
+            align-items: center;
+        }
+
+        &-text-text {
+            @include font-st('Poppins 500', 14px, $light-color);
+        }
+
+        &-text-icon {
+            fill: $light-color;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header__top {
+        &-wish {
+            @include flex-center;
+        }
+
+        &-button {
+            display: block;
+        }
+
+        &-item:nth-child(2)::after,
+        .button__currency::after {
+            @include after-right(auto, 1px, solid, $light-color);
+            padding-right: 10px;
+            margin-right: 10px;
+            opacity: 0.5;
+        }
+    }
+
+    .button__currency,
+    .button__language {
+        @include button(auto, auto, inline);
+        border: none;
+        padding: 0;
+        @include font-st('Poppins 500', 14px, $light-color);
+    }
+    .header__info {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        &-box {
+            border-bottom: none;
+        }
+    }
+
+    .header__info-menu-m,
+    .header__info-user-m {
+        display: none;
+    }
+
+    .header__info-contacts {
+        display: block;
+        @include link-style($middle-color, 'Poppins 500', none, none);
+        font-size: 14px;
+        line-height: 21px;
+
+        &-name {
+            display: flex;
+            align-items: center;
+        }
+
+        &-text {
+            @include font-st('Poppins 500', 16px, $dark-color);
+        }
+
+        &-icon {
+            margin-right: 7px;
+        }
+    }
+    .header__sticky {
+        background-color: $light-color;
+        position: sticky;
+        top: 1px;
+        z-index: 5;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #e9e9e9;
+        border-bottom: 1px solid #e9e9e9;
+
+        &__list {
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        &__list-link {
+            display: block;
+            @include font-st('Poppins', 14px, $dark-color);
+            padding: 15px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        &__list-item-sale,
+        &__list-item-hot {
+            @include font-style('Poppins', 8px, uppercase);
+            color: $light-color;
+            display: block;
+            padding: 2px 4px;
+            border-radius: 2px;
+
+            position: absolute;
+            top: 2px;
+            right: -10px;
+        }
+        &__list-item-sale {
+            background-color: #7fbc1e;
+        }
+
+        &__list-item-sale::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            border: 0 solid transparent;
+            border-right-width: 6px;
+            border-top: 5px solid #7fbc1e;
+        }
+
+        &__list-item-hot {
+            background-color: #ff0000;
+        }
+
+        &__list-item-hot::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            border: 0 solid transparent;
+            border-right-width: 6px;
+            border-top: 5px solid #f00;
+        }
+
+        &__list-item {
+            margin-right: 25px;
+            position: relative;
+        }
+
+        &__list-item:last-child {
+            margin-right: 0;
+        }
+
+        &__list-link:hover {
+            color: $main-color;
+        }
+
+        &__order {
+            display: flex;
+            align-items: center;
+        }
+
+        &__order-link {
+            display: block;
+            margin-right: 20px;
+        }
+        &__order-link:last-child {
+            margin-right: 0;
+        }
+        &__order-icon {
+            fill: $dark-color;
+            transition: all 0.3s ease;
+        }
+        &__order-icon:hover {
+            fill: $main-color;
+        }
+    }
+
+    .submenu {
+        padding: 15px;
+
+        border: 1px solid #e9e9e9;
+        position: absolute;
+        background-color: #fff;
+        top: 70px;
+        left: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+        visibility: hidden;
+    }
+    .submenu__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        &-box {
+            width: 200px;
+        }
+
+        &-link-img {
+            width: 80%;
+            height: auto;
+        }
+
+        &-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        &-link-title {
+            @include font-st('Poppins', 16px, $dark-color);
+            text-decoration: none;
+        }
+
+        &-link-title::after {
+            @include after-bottom(100px, 1px, solid, #e9e9e9);
+            display: block;
+            margin: 10px 0 10px;
+        }
+
+        &-link {
+            @include link-style($middle-color, 'Poppins', none, none);
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        &-link:hover {
+            color: $dark-color;
+        }
+
+        &-old-price {
+            @include font-st('Poppins', 14px, $middle-color);
+            text-decoration: line-through;
+        }
+
+        &-new-price {
+            @include font-st('Poppins 500', 16px, $dark-color);
+        }
+    }
+
+    .submenu__img {
+        display: flex;
+        justify-content: space-between;
+
+        &-link {
+            display: block;
+            width: 49%;
+        }
+
+        &-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .menu__list-item:hover .submenu {
+        visibility: visible;
+        opacity: 1;
+        top: 47px;
+    }
+}

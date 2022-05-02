@@ -1,0 +1,121 @@
+.sidebar__title {
+    @include font-st('Poppins', 16px, $dark-color);
+    padding: 12px 15px;
+    background-color: $background-color;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__box {
+    border: 1px solid #e9e9e9;
+    margin-bottom: 3%;
+}
+.sidebar__categories {
+    &-list {
+        @extend %list-style;
+        padding: 10px 15px;
+    }
+    &-item {
+        padding: 8px 0;
+    }
+
+    &-link {
+        @include link-style($dark-color, 'Poppins', none, none);
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.sidebar__collection {
+    &-list {
+        @extend %list-style;
+        padding: 10px;
+    }
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    &-item:last-child {
+        margin: 0;
+    }
+
+    &-img {
+        width: 28%;
+        height: auto;
+    }
+
+    &-link {
+        @include link-style(#222222, 'Poppins', none, none);
+        font-size: 14px;
+        display: block;
+    }
+
+    &-price,
+    &-img,
+    &-link {
+        margin-bottom: 10px;
+    }
+
+    &-old-price {
+        @include font-st('Poppins', 14px, $middle-color);
+        text-decoration: line-through;
+        margin-right: 7px;
+    }
+
+    &-new-price {
+        @include font-st('Poppins 500', 14px, $dark-color);
+    }
+
+    &-review {
+        display: flex;
+    }
+
+    &-review-color {
+        margin-right: 4px;
+    }
+
+    &-review-color svg {
+        fill: gold;
+    }
+
+    &-review-none-color svg {
+        fill: $middle-color;
+    }
+}
+
+.sidebar__banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar__collection {
+        &-img {
+            width: 13.5%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sidebar {
+        width: 25%;
+        margin-right: 30px;
+    }
+
+    .sidebar__title i {
+        display: none;
+    }
+
+    .sidebar__collection {
+        &-img {
+            width: 38%;
+        }
+    }
+}

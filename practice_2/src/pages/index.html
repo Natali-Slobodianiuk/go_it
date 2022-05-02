@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            The following 2 meta tags must come first in the <head>
+            to consistently ensure proper document rendering.
+            Any other head element should come after these tags.
+        -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Page title -->
+        <title>Gulp boilerplate</title>
+
+        <!-- Short description of the document (limit to 150 characters) -->
+        <meta name="description" content="Page description" />
+
+        <!-- Social metatags -->
+        <meta property="og:title" content="Unique page title" />
+        <meta property="og:description" content="Page description" />
+        <meta property="og:image" content="https://www.mywebsite.com/image.jpg" />
+        <meta property="og:image:alt" content="Image description" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mywebsite.com/page" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Theme Color for Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000000" />
+
+        <!-- SVG favicon for modern browsers. -->
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+
+        <!-- The 180×180px icon Apple devices will use if you add the page to your home screen. -->
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+        <!-- Prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs. -->
+        <link rel="canonical" href="https://www.mywebsite.com/page" />
+
+        <!-- inject:css -->
+        <!-- endinject -->
+
+        <link rel="stylesheet" href="./css/index.min.css" />
+
+        <script src="https://kit.fontawesome.com/1fd09514ac.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <a class="scrollup__link" href="#header"><i class="fa-solid fa-angle-up"></i></a>
+            <header id="header" class="header">
+                
+                <div class="header__top">
+                    <div class="container header__top-box">
+                    <div class="header__top-text">
+                        <svg class="header__top-text-icon" width="22px" height="22px">
+                            <use href="./images/svg/symbol-defs.svg#icon-sale"></use>
+                        </svg>
+                        <span class="header__top-text-text">Welcome To Our Beauty Store</span>
+                    </div>
+                    <div class="header__top-wish">
+                    <div class="header__top-item">
+                        <a class="header__top-link" href="#">Wishlist</a>
+                    </div>
+                    <div class="header__top-item">
+                        <a class="header__top-link" href="#">Contact</a>
+                    </div>
+                    <div class="header__top-button">
+                        <button class="button__currency">
+                            USD $ <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <button class="button__language">
+                            English <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                    </div>
+                </div>
+                    </div>
+                </div>
+
+                <div class="header__info-box">
+                    <div class="container header__info">
+                    <div class="header__info-menu-m">
+                        <a class="header__info-menu-link" href="#">
+                            <svg class="header__info-menu-icon" width="20px" height="20px">
+                                <use href="./images/svg/symbol-defs.svg#icon-menu"></use></svg
+                        ></a>
+                        <a class="header__info-menu-link" href="#"
+                            ><svg class="header__info-menu-icon" width="20px" height="20px">
+                                <use href="./images/svg/symbol-defs.svg#icon-search"></use></svg
+                        ></a>
+                    </div>
+                    <a href="mailto:info@gmail.com" class="header__info-contacts">
+                        <div class="header__info-contacts-name">
+                            <svg class="header__info-contacts-icon" width="25px" height="25px">
+                                <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            <span class="header__info-contacts-text">Email</span>
+                        </div>
+                        info@gmail.com
+                    </a>
+
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="./images/Logo.webp" alt="logo-img" width="164" height="35" />
+                    </a>
+
+                    <div class="header__info-user-m">
+                        <a class="header__info-user-link" href="#">
+                            <svg class="header__info-user-icon" width="22px" height="22px">
+                                <use href="./images/svg/symbol-defs.svg#icon-user"></use></svg
+                        ></a>
+                        <a class="header__info-user-link" href="#">
+                            <svg class="header__info-user-icon" width="22px" height="22px">
+                                <use href="./images/svg/symbol-defs.svg#icon-bag"></use></svg
+                        ></a>
+                    </div>
+
+                    <a href="tel:+91123456789" class="header__info-contacts">
+                        <div class="header__info-contacts-name">
+                            <svg class="header__info-contacts-icon" width="25px" height="25px">
+                                <use href="./images/svg/symbol-defs.svg#icon-phone1"></use>
+                            </svg>
+                            <span class="header__info-contacts-text">Contact</span>
+                        </div>
+                        +91 123456789
+                    </a>
+                </div>
+                </div>
+
+                
+            </header>
+            <nav class="menu container header__sticky">
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a class="menu__list-link href="#"">Beauty</a>
+                        <div class="submenu">
+                            <div class="submenu__menu">
+                                <div class="submenu__menu-box">
+                                    
+                                        
+                                        <a href="#" class="submenu__menu-link-title">Make Up</a>
+                                        
+                                        <ul class="submenu__menu-list">
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Mascara</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Concealer</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Eye Primer</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Face Powder</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Lipgloss</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Mascara</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Rouge</a>
+                                        </li>
+                                    </ul>         
+                                </div>
+                                <div class="submenu__menu-box">
+                                    
+                                        <a href="#" class="submenu__menu-link-title">Skin Care</a>
+                                        
+                                        <ul class="submenu__menu-list">
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Face wash</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Eye cream</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Sunscreen</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Skin Scrub</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Moisturise</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Facials</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Deodorants</a>
+                                        </li>
+                                    </ul>         
+                                </div>
+                                <div class="submenu__menu-box">
+                                    
+                                        <a href="#" class="submenu__menu-link-title">Fragrances</a>
+                                        
+                                        <ul class="submenu__menu-list">
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Fine fragrances</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Deodorants</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Body Mists</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Oriental</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Floral Gold</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Oceanic</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Make up</a>
+                                        </li>
+                                    </ul>         
+                                </div>
+                                <div class="submenu__menu-box">
+                                    <a class="submenu__menu-link" href="#">
+                                    <span class="submenu__menu-link-title">Special Product</span>
+                                    <img class="submenu__menu-link-img" src="./images/011.webp" alt="img">
+                                    <span class="submenu__menu-link-text">Base Foundation</span>
+                                    </a>
+                                    <div class="submenu__menu-price">
+                                        <span class="submenu__menu-old-price">$12.99</span>
+                                        <span class="submenu__menu-new-price">$10.00</span>
+                                    </div>        
+                                           
+                                </div>
+                            </div>
+                        
+                            <div class="submenu__img">
+                                <a href="#" class="submenu__img-link">
+                                    <img class="submenu__img-img" src="./images/menu-banner2.webp" alt="img">
+                                </a>
+                                <a href="#" class="submenu__img-link">
+                                    <img class="submenu__img-img" src="./images/menu-banner3.webp" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                    <span class="menu__list-item-sale">sale</span></li>
+                    <li class="menu__list-item"><a class="menu__list-link href="#"">Category</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link href="#"">Accessories</a>
+                        <div class="submenu">
+                            <div class="submenu__menu">
+                                <div class="submenu__menu-box">
+                                    
+                                        
+                                        <a href="#" class="submenu__menu-link-title">Make Up</a>
+                                        
+                                        <ul class="submenu__menu-list">
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Mascara</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Concealer</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Eye Primer</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Face Powder</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Lipgloss</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Mascara</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Rouge</a>
+                                        </li>
+                                    </ul>         
+                                </div>
+                                <div class="submenu__menu-box">
+                                    
+                                        <a href="#" class="submenu__menu-link-title">Skin Care</a>
+                                        
+                                        <ul class="submenu__menu-list">
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Face wash</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Eye cream</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Sunscreen</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Skin Scrub</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Moisturise</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Facials</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Deodorants</a>
+                                        </li>
+                                    </ul>         
+                                </div>
+                                    <div class="submenu__menu-box">
+                                    <a class="submenu__menu-link" href="#">
+                                    <span class="submenu__menu-link-title">Special Product</span>
+                                    <img class="submenu__menu-link-img" src="./images/03.webp" alt="img">
+                                    <span class="submenu__menu-link-text">Base Foundation</span>
+                                    </a>
+                                    <div class="submenu__menu-price">
+                                        <span class="submenu__menu-new-price">$10.00</span>
+                                    </div>        
+                                           
+                                </div>
+                            </div>
+
+                        </div>
+                        <span class="menu__list-item-sale">sale</span></li>
+                    <li class="menu__list-item"><a class="menu__list-link href="#"">Blogs</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link href="#"">Collection</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link href="#"">Include Pages</a>
+                        <div class="submenu">
+                            <div class="submenu__menu">
+                                <div class="submenu__menu-box">
+                                        <a href="#" class="submenu__menu-link-title">Make Up</a>
+                                        
+                                        <ul class="submenu__menu-list">
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Mascara</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Concealer</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Eye Primer</a>
+                                        </li>
+                                        <li class="submenu__menu-list-item">
+                                            <a href="#" class="submenu__menu-link">Face Powder</a>
+                                        </li>
+                                        </ul>         
+                                </div>
+                               </div>
+
+                        </div>
+                    </li>
+                    <li class="menu__list-item"><a class="menu__list-link href="#"">About Us</a>
+                        <span class="menu__list-item-hot">hot</span></li>
+                </ul>
+                <div class="menu__order">
+                    <a class="menu__order-link" href="#">
+                    <svg class="menu__order-icon" width="22px" height="22px">
+                        <use href="./images/svg/symbol-defs.svg#icon-search"></use>
+                    </svg></a>
+                    <a class="menu__order-link" href="#">
+                    <svg class="menu__order-icon" width="22px" height="22px">
+                        <use href="./images/svg/symbol-defs.svg#icon-user"></use>
+                    </svg></a>
+                    <a class="menu__order-link" href="#">
+                    <svg class="menu__order-icon" width="28px" height="28px">
+                        <use href="./images/svg/symbol-defs.svg#icon-cart"></use>
+                    </svg></a>
+                </div>
+            </nav>
+
+
+            <main class="main">
+                <div class="content container">
+
+                    <div class="main-content">
+
+                    <div class="product">
+
+                        <div class="product__image">
+                            <div class="product__image-sticky">
+                            <div class="product__image-box">
+                                <img class="product__image-main" src="./images/05.webp" alt="product-img">
+                            </div>
+                            
+                            <div class="product__image-other-box">
+                                <img class="product__image-other" src="./images/06.webp" alt="product-img">
+                                <img class="product__image-other" src="./images/011.webp" alt="product-img">
+                                <img class="product__image-other" src="./images/09.webp" alt="product-img">
+                                <img class="product__image-other" src="./images/013.webp" alt="product-img">
+                                
+                                <button class="product__image-other-button-left"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="product__image-other-button-right"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="product__info">
+                            <h1 class="product__info-title">Powder Blush Brush</h1>
+                            <div class="product__info-review">
+                                <div class="review__star">
+                                    <div class="review__star-items">
+                                        <input class="review__star-item" type="radio" id="star-5" name="rating" value="5">
+                                        <label class="review__star-label" for="star-5"></label>	
+                                        <input class="review__star-item" type="radio" id="star-4" name="rating" value="4" checked>
+                                        <label class="review__star-label" for="star-4" ></label>    
+                                        <input class="review__star-item" type="radio" id="star-3" name="rating" value="3">
+                                        <label class="review__star-label" for="star-3"></label>  
+                                        <input class="review__star-item" type="radio" id="star-2" name="rating" value="2">
+                                        <label class="review__star-label" for="star-2"></label>    
+                                        <input class="review__star-item"type="radio" id="star-1" name="rating" value="1">
+                                        <label class="review__star-label"  for="star-1"></label>
+                                    </div>                                    
+                                </div>
+                                <a href="#" class="product__info-review-link">Write Review
+                                    <svg class="rproduct__info-review-icon" width="14px" height="14px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-pencil"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="product__info-cost">
+                                <span class="product__info-cost-old-price">$10.00</span>
+                                        <span class="product__info-cost-new-price">$10.00</span>
+                            </div>
+                            <p class="product__info-vendor">Vendor: <span class="product__info-vendor-value">glamour</span></p>
+                            <p class="product__info-vendor">Product Type: <span class="product__info-vendor-value">beauty</span></p>
+                            <div class="product__info-wish-size">
+                                <div class="product__info-wish">
+                                    <a class="product__info-wish-link" href="#">
+                                        <svg class="product__info-wish-icon" width="14px" height="14px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>Add to wishlist</a>
+                                </div>
+                                <div class="product__info-size">
+                                    
+                                        <svg class="product__info-size-icon" width="30px" height="24px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-ruler"></use>
+                                    </svg>
+                                    <button class="product__info-size-button">Sizechart</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="product__info-vendors">
+                                <p class="product__info-vendor">Color</p>
+
+                                <label>
+                                <input class="color-input" type="radio" name="color">
+                            <div class="color-red-box box"></div>
+                        </label>
+
+                                <label>
+                                <input class="color-input" type="radio" name="color">
+                                <div class="color-marsala-box box"></div>
+                            </label>
+                            </div>
+
+                            <div class="product__info-vendors">
+                                <p class="product__info-vendor">Size</p>
+
+                                <label>
+                                <input class="size-input" type="radio" name="size">
+                            <div class="size-box box">
+                                <span class="size-number">L</span>
+                            </div></label>
+                            
+                                <label>
+                                <input class="size-input" type="radio" name="size" checked>
+                                <div class="size-box box">
+                                    <span class="size-number">M</span>
+                                </div></label>
+                            </div>
+
+                            <div class="product__info-quantity">
+                            <p class="product__info-quantity-text">Hurry! Only <span class="product__info-quantity-value">7</span>units left in stock!</p>
+                            <div class="product__info-quantity-scale">
+                                <span class="product__info-quantity-scale-filling"></span>
+                            </div>
+                            </div>
+                            <p class="product__info-vendor">Quantity</p>
+                            <div class="product__info-quantity-input">
+                                
+                                <button class="product__info-quantity-input-button">-</button>
+                                <input class="product__info-quantity-input-input" type="text" name="quantity" value="1">
+                                <button class="product__info-quantity-input-button">+</button>
+                            </div>
+                            <div class="product__info-buy">
+                                <button class="product__info-add product__info-buy-button">Add to cart</button>
+                                <button class="product__info-now-buy product__info-buy-button">Buy it now</button>
+                            </div>
+
+                            <div class="product__info-benefits">
+                                <ul class="product__info-benefits-list">
+                                    <li class="product__info-benefits-item">
+                                        <svg class="product__info-benefits-icon" width="33px" height="33px">
+                                            <use href="./images/svg/symbol-defs.svg#icon-box"></use>
+                                        </svg>
+                                        <div class="product__info-benefits-box">
+                                            <span class="product__info-benefits-title">Free Delivery</span>
+                                            <span class="product__info-benefits-text">Lorem Ipsum dummy</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__info-benefits-item">
+                                        <svg class="product__info-benefits-icon" width="33px" height="33px">
+                                            <use href="./images/svg/symbol-defs.svg#icon-economy"></use>
+                                        </svg>
+                                        <div class="product__info-benefits-box">
+                                            <span class="product__info-benefits-title">Big Savings</span>
+                                            <span class="product__info-benefits-text">Lorem Ipsum dummy</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__info-benefits-item">
+                                        <svg class="product__info-benefits-icon" width="33px" height="33px">
+                                            <use href="./images/svg/symbol-defs.svg#icon-user1"></use>
+                                        </svg>
+                                        <div class="product__info-benefits-box">
+                                            <span class="product__info-benefits-title">Customer Care</span>
+                                            <span class="product__info-benefits-text">Lorem Ipsum dummy</span>
+                                        </div>
+                                    </li>
+                                    <li class="product__info-benefits-item">
+                                        <svg class="product__info-benefits-icon" width="33px" height="33px">
+                                            <use href="./images/svg/symbol-defs.svg#icon-gift"></use>
+                                        </svg>
+                                        <div class="product__info-benefits-box">
+                                            <span class="product__info-benefits-title">Gift Voucher</span>
+                                            <span class="product__info-benefits-text">Lorem Ipsum dummy</span>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                            <div class="product__info-trust">
+                                <img class="product__info-trust-image" src="./images/08.webp" alt="img">
+                            </div>
+
+                            <div class="product__info-social">
+                                <ul class="product__info-social-list">
+                                    <li class="product__info-social-item">
+                                        <a href="#" class="product__info-social-link">
+                                            <svg class="product__info-social-icon" width="20px" height="20px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                                            </svg>
+                                            <span class="visually-hidden">Facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="product__info-social-item">
+                                        <a href="#" class="product__info-social-link">
+                                            <svg class="product__info-social-icon" width="20px" height="20px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                                            </svg>
+                                            <span class="visually-hidden">Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="product__info-social-item">
+                                        <a href="#" class="product__info-social-link">
+                                            <svg class="product__info-social-icon" width="20px" height="20px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                                            </svg>
+                                            <span class="visually-hidden">Mail</span>
+                                        </a>
+                                    </li>
+                                    <li class="product__info-social-item">
+                                        <a href="#" class="product__info-social-link">
+                                            <svg class="product__info-social-icon" width="20px" height="20px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-pinterest"></use>
+                                            </svg>
+                                            <span class="visually-hidden">Pinterest</span>
+                                        </a>
+                                    </li>
+                                    <li class="product__info-social-item">
+                                        <a href="#" class="product__info-social-link">
+                                            <svg class="product__info-social-icon" width="20px" height="20px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-print"></use>
+                                            </svg>
+                                            <span class="visually-hidden">Print</span>
+                                        </a>
+                                    </li>
+                                    <li class="product__info-social-item">
+                                        <a href="#" class="product__info-social-link">
+                                            <svg class="product__info-social-icon" width="20px" height="20px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                                            </svg>
+                                            <span class="visually-hidden">Other</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="main-content__info">
+                        <ul class="main-content__info-list">
+                            <li class="main-content__info-item">
+                                <a href="#" class="main-content__info-link">Description</a></li>
+                            <li class="main-content__info-item">
+                                <a href="#" class="main-content__info-link">Reviews</a></li>
+                            <li class="main-content__info-item">
+                                <a href="#" class="main-content__info-link">Shipping & Returns</a></li>
+                            <li class="main-content__info-item">
+                                <a href="#" class="main-content__info-link">Custom Tab1</a></li>
+                        </ul>
+                        <div class="main-content__info-description">
+                            <p class="main-content__info-text">Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer!</p>
+                            <h5 class="main-content__info-title">Sample Unordered List</h5>
+                            <ul class="main-content__info-text">
+                                <li>Comodous in tempor ullamcorper miaculis</li>
+                                <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                                <li>Divamus sit amet purus justo.</li>
+                                <li>Proin molestie egestas orci ac suscipit risus posuere loremou.</li>
+                            </ul>
+                            <h5 class="main-content__info-title">Sample Ordered Lista</h5>
+                            <ol class="main-content__info-text">
+                                <li>Comodous in tempor ullamcorper miaculis</li>
+                                <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                                <li>Divamus sit amet purus justo.</li>
+                                <li>Proin molestie egestas orci ac suscipit risus posuere loremous.</li>
+                            </ol>
+                            <h5 class="main-content__info-title">Sample Paragraph Text</h5>
+                            <p class="main-content__info-text main-content__info-text-border">Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer!Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summe!</p>
+                        </div>
+
+                    </div>
+                    <div class="also-like">
+                        <h2 class="also-like__title">You May Also Like</h2>
+                        <ul class="also-like__list">
+                            <li class="also-like__item">
+                                <a href="#" class="also-like__link">
+                                    <div class="also-like__img-box">
+                                        <img class="also-like__img" src="./images/010.webp" alt="img">
+                                        <span class="also-like__img-marker">Sale</span>
+    
+                                        <div class="also-like__img-icon">
+                                            <button class="also-like__icon-button also-like__icon-button-eye">
+                                                <svg class="also-like__icon" width="15px" height="15px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="also-like__icon-button also-like__icon-button-heart">
+                                                <svg class="also-like__icon" width="12px" height="12px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-heart1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        </div>
+                                    <span class="also-like__product-name">The Foundation</span>
+                                    <div class="also-like__product-cost-box">
+                                        <span class="also-like__product-cost-old">30.00</span>
+                                        <span class="also-like__product-cost-new">25.00</span>
+                                    </div>
+                                </a>
+                                <button class="also-like__button">add to cart</button>
+                            </li>
+                            <li class="also-like__item">
+                                <a href="#" class="also-like__link">
+                                    <div class="also-like__img-box">
+                                    <img class="also-like__img" src="./images/04.webp" alt="img">
+                                    <span class="also-like__img-marker">Sale</span>
+                                    <div class="also-like__img-icon">
+                                        <button class="also-like__icon-button also-like__icon-button-eye">
+                                            <svg class="also-like__icon" width="15px" height="15px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="also-like__icon-button also-like__icon-button-heart">
+                                            <svg class="also-like__icon" width="12px" height="12px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-heart1"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    </div>
+                                    <span class="also-like__product-name">Modern Eye Brush</span>
+                                    <div class="also-like__product-cost-box">
+                                        <span class="also-like__product-cost-old">30.00</span>
+                                        <span class="also-like__product-cost-new">25.00</span>
+                                    </div>
+                                </a>
+                                <button class="also-like__button">add to cart</button>
+                            </li>
+                            <li class="also-like__item">
+                                <a href="#" class="also-like__link">
+                                    <div class="also-like__img-box">
+                                        <img class="also-like__img" src="./images/010.webp" alt="img">
+                                        
+                                        <div class="also-like__img-icon">
+                                            <button class="also-like__icon-button also-like__icon-button-eye">
+                                                <svg class="also-like__icon" width="15px" height="15px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="also-like__icon-button also-like__icon-button-heart">
+                                                <svg class="also-like__icon" width="12px" height="12px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-heart1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        </div>
+                                    <span class="also-like__product-name">Pencil eyeliner</span>
+                                    <div class="also-like__product-cost-box">
+                                        <span class="also-like__product-cost">11.00</span>
+                                    </div>
+                                </a>
+                                <button class="also-like__button">add to cart</button>
+                            </li>
+                        </ul>
+                        <div class="also-like__navigation">
+                            <span class="also-like__navigation-text">1/2</span>
+                            <button class="also-like__navigation-button also-like__navigation-button-l"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="also-like__navigation-button"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <aside class="sidebar">
+                        <div class="sidebar__categories sidebar__box">
+                            <h4 class="sidebar__title">Shop By Categories<i class="fa-solid fa-angle-up"></i></h4>
+                            <ul class="sidebar__categories-list">
+                                <li class="sidebar__categories-item">
+                                    <a class="sidebar__categories-link" href="#">Make up
+                                        <i class="fa-solid fa-angle-down"></i></a>
+                                </li>
+                                <li class="sidebar__categories-item">
+                                    <a class="sidebar__categories-link" href="#">Skin care
+                                        <i class="fa-solid fa-angle-down"></i></a>
+                                </li>
+                                <li class="sidebar__categories-item">
+                                    <a class="sidebar__categories-link" href="#">Fragrances
+                                        <i class="fa-solid fa-angle-down"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar__collection sidebar__box">
+                            <h4 class="sidebar__title">Featured Collection<i class="fa-solid fa-angle-up"></i></h4>
+                            <ul class="sidebar__collection-list">
+                                <li class="sidebar__collection-item">
+                                    <img class="sidebar__collection-img" src="./images/04.webp" alt="img">
+                                    <div class="sidebar__collection-text">
+                                        <a class="sidebar__collection-link" href="#">Base Foundation
+                                        </a>
+                                        <div class="sidebar__collection-price">
+                                        <span class="sidebar__collection-old-price">$12.99</span>
+                                        <span class="sidebar__collection-new-price">$10.00</span>
+                                    </div>
+                                    <div class="sidebar__collection-review">
+                                        <div class="sidebar__collection-review-color">
+                                            <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                            </svg>
+                                            <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                            </svg> 
+                                            <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                            </svg> 
+                                            <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                            </svg>
+                                        </div>
+                                         <div class="sidebar__collection-review-none-color">
+                                        <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                            <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                        </svg>   
+                                    </div>                              
+                                    </div>
+                                    </div>
+                                    
+                                </li>
+                                <li class="sidebar__collection-item">
+                                    <img class="sidebar__collection-img" src="./images/05.webp" alt="img">
+                                    <div class="sidebar__collection-text">
+                                        <a class="sidebar__collection-link" href="#">Powder Blush Brush
+                                        </a>
+                                        <div class="sidebar__collection-price">
+                                        <span class="sidebar__collection-old-price">$14.00</span>
+                                        <span class="sidebar__collection-new-price">$10.00</span>
+                                        </div>
+                                        <div class="sidebar__collection-review">
+                                            <div class="sidebar__collection-review-color">
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                             <div class="sidebar__collection-review-none-color">
+                                               
+                                        </div>                              
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sidebar__collection-item">
+                                    <img class="sidebar__collection-img" src="./images/06.webp" alt="img">
+                                    <div class="sidebar__collection-text">
+                                        <a class="sidebar__collection-link" href="#">Skin Loation Cream
+                                        </a>
+                                        <div class="sidebar__collection-price">
+                                        <span class="sidebar__collection-old-price">$17.00</span>
+                                        <span class="sidebar__collection-new-price">$10.00</span>
+                                        </div>
+                                        <div class="sidebar__collection-review">
+                                            <div class="sidebar__collection-review-color">
+                                                
+                                            </div>
+                                             <div class="sidebar__collection-review-none-color">
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                            <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                            </svg>   
+                                        </div>                              
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <img class="sidebar__banner" src="./images/07.webp" alt="img" width="270" height="390">
+
+                        <div class="sidebar__collection sidebar__box">
+                            <h4 class="sidebar__title">Special Collection<i class="fa-solid fa-angle-up"></i></h4>
+                            <ul class="sidebar__collection-list">
+                                <li class="sidebar__collection-item">
+                                    <img class="sidebar__collection-img" src="./images/09.webp" alt="img" height="90" width="90">
+                                    <div class="sidebar__collection-text">
+                                        <a class="sidebar__collection-link" href="#">Dior Lip Glow
+                                        </a>
+                                        <div class="sidebar__collection-price">
+                                        <span class="sidebar__collection-old-price">$21.00</span>
+                                        <span class="sidebar__collection-new-price">$20.00</span>
+                                        </div>
+                                        <div class="sidebar__collection-review">
+                                            <div class="sidebar__collection-review-color">
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                
+                                            </div>
+                                             <div class="sidebar__collection-review-none-color">
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                            <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                            </svg>   
+                                        </div>                              
+                                        </div>
+                                    </div>
+                                    
+                                </li>
+                                <li class="sidebar__collection-item">
+                                    <img class="sidebar__collection-img" src="./images/01.webp" alt="img" height="90" width="90">
+                                    <div class="sidebar__collection-text">
+                                        <a class="sidebar__collection-link" href="#">The Foundation
+                                        </a>
+                                        <div class="sidebar__collection-price">
+                                        <span class="sidebar__collection-old-price">$30.00</span>
+                                        <span class="sidebar__collection-new-price">$25.00</span>
+                                        </div>
+                                        <div class="sidebar__collection-review">
+                                            <div class="sidebar__collection-review-color">
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                
+                                            </div>
+                                             <div class="sidebar__collection-review-none-color">
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                            <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                            </svg>   
+                                        </div>                              
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sidebar__collection-item">
+                                    <img class="sidebar__collection-img" src="./images/011.webp" alt="img" height="90" width="90">
+                                    <div class="sidebar__collection-text">
+                                        <a class="sidebar__collection-link" href="#">Lakme Foundation
+                                        </a>
+                                        <div class="sidebar__collection-price">
+                                        <span class="sidebar__collection-old-price">$55.00</span>
+                                        <span class="sidebar__collection-new-price">$50.00</span>
+                                        </div>
+                                        <div class="sidebar__collection-review">
+                                            <div class="sidebar__collection-review-color">
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg> 
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="sidebar__collection-icon" width="14px" height="14px">
+                                                    <use href="./images/svg/symbol-defs.svg#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                             <div class="sidebar__collection-review-none-color">
+                                               
+                                        </div>                              
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__groups">
+                    <div class="container">
+                        <div class="footer__groups-list">
+                    <div class="footer__group-item">
+                        <h2 class="footer__group-title footer__group-title-contacts">Contact information <i class="fa-solid fa-angle-down"></i></h2>
+                        <div class="footer__group-info">
+                            <div class="footer__group-icon-box">
+                                <svg class="footer__group-icon" width="22px" height="22px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-location"></use>
+                                </svg>
+                            </div>
+                            <div class="footer__group-info-box">
+                            <span class="footer__group-info-name">Location</span>
+                            <span class="footer__group-info-text">4005, Silver business point</span>
+                            <span class="footer__group-info-text">India</span>
+                        </div>
+                        </div>
+                        <div class="footer__group-info">
+                            <div class="footer__group-icon-box">
+                                <svg class="footer__group-icon" width="22px" height="22px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                            </div>
+                            <div class="footer__group-info-box">
+                            <span class="footer__group-info-name">Contact Us</span>
+                            <a href="tel:+91123456789" class="footer__group-info-link">+91 123456789</a>
+                        </div>
+                        </div>
+                        <div class="footer__group-info">
+                            <div class="footer__group-icon-box">
+                                <svg class="footer__group-icon" width="22px" height="22px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                                </svg>
+                            </div>
+                            <div class="footer__group-info-box">
+                            <span class="footer__group-info-name">Email</span>
+                            <a href="mailto:info@gmail.com" class="footer__group-info-link">info@gmail.com</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="footer__group-item">
+                        <h2 class="footer__group-title">Your account<i class="fa-solid fa-angle-down"></i></h2>
+                        <ul class="footer__group-list">
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Personal Info</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Orders</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Credit Slips</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Address</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__group-item">
+                        <h2 class="footer__group-title">Products<i class="fa-solid fa-angle-down"></i></h2>
+                        <ul class="footer__group-list">
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">New Product</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Specials</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Best Product</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Price Drop</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Delivery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__group-item">
+                        <h2 class="footer__group-title">Our company<i class="fa-solid fa-angle-down"></i></h2>
+                        <ul class="footer__group-list">
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Our Stores</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Brands</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Collection</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Blogs</a></li>
+                            <li class="footer__group-list-item">
+                                <a class="footer__group-list-link" href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__group-item">
+                        <h2 class="footer__group-title">Follow us<i class="fa-solid fa-angle-down"></i></h2>
+                        <ul class="footer__group-list">
+                            <li class="footer__group-list-item">
+                                
+                                <a class="footer__group-list-link" href="#">
+                                    <svg class="footer__group-list-icon" width="16px" height="16px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                                </svg>Facebook</a></li>
+                            <li class="footer__group-list-item">
+                                
+                                <a class="footer__group-list-link" href="#">
+                                    <svg class="footer__group-list-icon" width="16px" height="16px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                                </svg>Instagram</a></li>
+                            <li class="footer__group-list-item">
+                                
+                                <a class="footer__group-list-link" href="#">
+                                    <svg class="footer__group-list-icon" width="16px" height="16px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-tiktok"></use>
+                                    </svg>TikTok</a></li>
+                            <li class="footer__group-list-item">
+                                
+                                <a class="footer__group-list-link" href="#">
+                                    <svg class="footer__group-list-icon" width="16px" height="16px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-snapchat"></use>
+                                    </svg>Snapchat</a></li>
+                            <li class="footer__group-list-item">
+                                
+                                <a class="footer__group-list-link" href="#">
+                                    <svg class="footer__group-list-icon" width="16px" height="16px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-vimeo"></use>
+                                    </svg>Vimeo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div class="footer__copyright container">
+                    <p class="footer__copyright-text">&#169; 2022, Glamour Sectioned Shopify Theme Powered by Shopify</p>
+                    <ul class="footer__payment-list">
+                        <li class="footer__payment-list-item">
+                            
+                            <svg class="footer__payment-list-icon" width="36px" height="22px">
+                                <use href="./images/svg/symbol-defs.svg#icon-apple-pay2"></use>
+                            </svg>
+                        
+                        </li>
+                        <li class="footer__payment-list-item">
+                            <svg class="footer__payment-list-icon footer__payment-list-icon-google" width="36px" height="20px">
+                                <use href="./images/svg/symbol-defs.svg#icon-google-pay2"></use>
+                            </svg>
+                        </li>
+                        <li class="footer__payment-list-item">
+                            <svg class="footer__payment-list-icon" width="36px" height="22px">
+                                <use href="./images/svg/symbol-defs.svg#icon-visa2"></use>
+                            </svg>
+                        </li>
+                        <li class="footer__payment-list-item">
+                            <svg class="footer__payment-list-icon" width="36px" height="22px">
+                                <use href="./images/svg/symbol-defs.svg#icon-mastercard2"></use>
+                            </svg>
+                        </li>
+                        <li class="footer__payment-list-item">
+                            <svg class="footer__payment-list-icon" width="36px" height="22px">
+                                <use href="./images/svg/symbol-defs.svg#icon-discover2"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

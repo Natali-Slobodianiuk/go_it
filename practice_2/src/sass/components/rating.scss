@@ -1,0 +1,55 @@
+.review__star {
+    position: relative;
+    font-size: 21px;
+    display: inline-block;
+
+    &::before {
+        content: '★★★★★';
+        display: block;
+    }
+
+    &-items {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+
+    &-item {
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &-label {
+        flex: 0 0 20%;
+        height: 100%;
+        cursor: pointer;
+        color: $text-color;
+    }
+
+    &-label::before {
+        content: '★';
+        display: block;
+        transition: all 0.5s;
+    }
+
+    &-item:checked,
+    &-item:checked ~ .review__star-label {
+        color: gold;
+    }
+
+    &-label:hover,
+    &-label:hover ~ .review__star-label,
+    &-label:checked ~ .review__star-label:hover {
+        color: gold;
+    }
+}

@@ -45,6 +45,12 @@
     border-bottom: $border-size $border-type $border-color;
 }
 
+@mixin after-right($height, $border-size, $border-type, $border-color, $content: '') {
+    content: $content;
+    height: $height;
+    border-right: $border-size $border-type $border-color;
+}
+
 @mixin flex-center($type: 'all') {
     display: flex;
     @if $type== 'all' {

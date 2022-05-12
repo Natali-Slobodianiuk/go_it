@@ -10,7 +10,7 @@
     }
 
     &__title {
-        @include font-st('Roboto 700', 22px, $light-color);
+        @include font-styles-color('Roboto 700', 22px, $light-color);
         margin: 0 0 25px;
     }
 }
@@ -26,7 +26,7 @@
     }
 
     &-text {
-        @include font-st('Roboto 500', 16px, $menu-light-color);
+        @include font-styles-color('Roboto 500', 16px, $menu-light-color);
         line-height: 24px;
         margin: 0 0 12px;
     }
@@ -139,7 +139,7 @@
     }
 
     &-data {
-        @include font-st('Roboto 500', 16px, #95999e);
+        @include font-styles-color('Roboto 500', 16px, #95999e);
     }
 }
 
@@ -187,11 +187,11 @@
     }
 
     &-list-text {
-        @include font-st('Roboto 500', 16px, $light-color);
+        @include font-styles-color('Roboto 500', 16px, $light-color);
     }
 
     &-list-text-details {
-        @include font-st('Roboto 500', 14px, #dccfcf);
+        @include font-styles-color('Roboto 500', 14px, #dccfcf);
         line-height: 30px;
     }
 
@@ -231,6 +231,6 @@
     }
 
     &-list-text-tel {
-        @include font-st('Roboto 700', 15px, #ffffff99);
+        @include font-styles-color('Roboto 700', 15px, #ffffff99);
     }
 }

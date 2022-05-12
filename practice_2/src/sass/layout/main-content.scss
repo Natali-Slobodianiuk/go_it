@@ -47,7 +47,7 @@
 
 .product__info {
     &-title {
-        @include font-st('Poppins', 22px, $dark-color);
+        @include font-styles-color('Poppins', 22px, $dark-color);
         margin: 0 0 10px;
     }
 
@@ -66,22 +66,22 @@
     }
 
     &-cost-old-price {
-        @include font-st('Poppins', 16px, $text-color);
+        @include font-styles-color('Poppins', 16px, $text-color);
         text-decoration: line-through;
         margin-right: 2%;
     }
 
     &-cost-new-price {
-        @include font-st('Poppins', 22px, $dark-color);
+        @include font-styles-color('Poppins', 22px, $dark-color);
     }
 
     &-vendor {
         margin: 0 0 10px;
-        @include font-st('Poppins 700', 14px, $middle-color);
+        @include font-styles-color('Poppins 700', 14px, $middle-color);
     }
 
     &-vendor-value {
-        @include font-st('Poppins', 14px, $middle-color);
+        @include font-styles-color('Poppins', 14px, $middle-color);
     }
 
     &-wish-size {
@@ -110,7 +110,7 @@
 
     &-size-button {
         background-color: transparent;
-        @include font-st('Poppins', 14px, $dark-color);
+        @include font-styles-color('Poppins', 14px, $dark-color);
         border: none;
         cursor: pointer;
         padding: 0;
@@ -124,12 +124,12 @@
     }
 
     &-quantity-text {
-        @include font-st('Poppins 500', 15px, $dark-color);
+        @include font-styles-color('Poppins 500', 15px, $dark-color);
         margin: 0 0 10px;
     }
 
     &-quantity-value {
-        @include font-st('Poppins', 18px, #ff3d12);
+        @include font-styles-color('Poppins', 18px, #ff3d12);
         font-weight: bold;
         margin-right: 5px;
     }
@@ -159,7 +159,7 @@
 
         &-button {
             @include button(33.33%, 40px);
-            @include font-st('Poppins 500', 15px, $text-color);
+            @include font-styles-color('Poppins 500', 15px, $text-color);
             border: none;
         }
 
@@ -183,7 +183,7 @@
         display: block;
         cursor: pointer;
         border: none;
-        @include font-st('Poppins 500', 14px, $light-color);
+        @include font-styles-color('Poppins 500', 14px, $light-color);
         text-transform: uppercase;
         padding: 15px;
         transition: all 0.3s ease;
@@ -232,13 +232,13 @@
     }
 
     &-title {
-        @include font-st('Poppins 500', 14px, $dark-color);
+        @include font-styles-color('Poppins 500', 14px, $dark-color);
         display: block;
         margin-bottom: 5px;
     }
 
     &-text {
-        @include font-st('Poppins', 13px, $text-color);
+        @include font-styles-color('Poppins', 13px, $text-color);
     }
 }
 
@@ -334,12 +334,12 @@
     }
 
     &-title {
-        @include font-st('Poppins 500', 15px, $dark-color);
+        @include font-styles-color('Poppins 500', 15px, $dark-color);
         margin: 0 0 15px;
     }
 
     &-text {
-        @include font-st('Poppins', 14px, $text-color);
+        @include font-styles-color('Poppins', 14px, $text-color);
         line-height: 24px;
         margin: 0 0 20px;
     }
@@ -396,7 +396,7 @@
         &-buy-button {
             width: 50%;
 
-            @include font-st('Poppins 500', 14px, $light-color);
+            @include font-styles-color('Poppins 500', 14px, $light-color);
             padding: 15px 20px;
         }
     }

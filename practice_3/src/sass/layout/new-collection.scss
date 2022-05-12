@@ -1,0 +1,105 @@
+.banner__new-collection {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .new-collection-text {
+        display: none;
+    }
+
+    .banner__new-collection {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .banner__new-collection:hover .banner__new-collection-img {
+        transform: scale(1.1);
+    }
+
+    .banner__new-collection-img {
+        width: 100%;
+        height: auto;
+
+        transition: 5s ease;
+    }
+    .new-collection-title {
+        @include font-styles-color('Rubic', 14px, $dark-color);
+        margin: 0 0 10px;
+    }
+    .new-collection-button {
+        @include font-styles-color('Rubic', 14px, $light-color);
+        line-height: 21px;
+        padding: 8px 18px;
+        background-color: $main-color;
+        border: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .new-collection-button:hover {
+        background-color: $dark-color;
+    }
+
+    .banner__new-collection-text {
+        position: absolute;
+        top: 16px;
+        left: 60%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .new-collection-title {
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+
+    .new-collection-button {
+        text-transform: uppercase;
+        padding: 8px 20px;
+    }
+
+    .banner__new-collection-text {
+        top: 25px;
+        left: 65%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .new-collection-text {
+        display: block;
+        @include font-styles-color('Rubic', 14px, rgba($dark-color, 0.5));
+        line-height: 21px;
+        margin: 0 0 36px;
+    }
+
+    .new-collection-title {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .banner__new-collection-text {
+        top: 10px;
+        left: 45%;
+    }
+    .new-collection-button {
+        padding: 12px 35px;
+    }
+}
+@media screen and (min-width: 1410px) {
+    .new-collection-title {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    .banner__new-collection-text {
+        top: 25px;
+        left: 41%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .banner__new-collection-text {
+        top: 43px;
+        left: 50%;
+    }
+}

@@ -147,7 +147,7 @@
 
 .header__account-button {
     @include button(130px, 40px);
-    @include font-style('Roboto 700', 16px);
+    @include font-styles('Roboto 700', 16px);
     border: 1px dashed $main-color;
     border-radius: 25px;
     color: $main-color;

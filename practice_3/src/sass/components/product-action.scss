@@ -1,0 +1,64 @@
+.toprated-products__action,
+.top__action {
+    display: flex;
+    &-button {
+        background-color: rgba($dark-color, 0.05);
+        border: none;
+        border-radius: 4px;
+        padding: 6px;
+        display: flex;
+        margin-right: 5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    &-button:last-child {
+        margin: 0;
+    }
+
+    &-button-laptop {
+        display: none;
+    }
+
+    &-icon {
+        fill: $dark-color;
+        transition: all 0.3s ease;
+    }
+
+    &-button:hover {
+        background-color: $main-color;
+    }
+
+    &-button:hover .top__action-icon {
+        fill: $light-color;
+    }
+}
+@media screen and (min-width: 992px) {
+    .toprated-products__action,
+    .top__action {
+        &-button-laptop {
+            display: block;
+            @include font-styles-color('Rubic', 14px, $dark-color);
+            text-transform: capitalize;
+        }
+
+        &-button-laptop:hover {
+            color: $light-color;
+        }
+
+        &-button-mob {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .toprated-products__action,
+    .top__action {
+        &-button {
+            padding: 10px;
+        }
+
+        &-button-laptop {
+            text-transform: uppercase;
+        }
+    }
+}

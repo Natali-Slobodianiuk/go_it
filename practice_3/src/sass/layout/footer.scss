@@ -1,0 +1,8 @@
+.footer {
+    background-color: #33373e;
+    padding-top: 20px;
+
+    @media screen and (min-width: 992px) {
+        padding-top: 60px;
+    }
+}

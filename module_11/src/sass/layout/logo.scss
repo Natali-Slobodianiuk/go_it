@@ -1,5 +1,5 @@
 .logo {
     color: $light-color;
-    @include font-style('Montserrat bold', 30px);
+    @include font-styles('Montserrat bold', 30px);
     text-decoration: none;
 }

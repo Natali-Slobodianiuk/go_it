@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            The following 2 meta tags must come first in the <head>
+            to consistently ensure proper document rendering.
+            Any other head element should come after these tags.
+        -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Page title -->
+        <title>Gulp boilerplate</title>
+
+        <!-- Short description of the document (limit to 150 characters) -->
+        <meta name="description" content="Page description" />
+
+        <!-- Social metatags -->
+        <meta property="og:title" content="Unique page title" />
+        <meta property="og:description" content="Page description" />
+        <meta property="og:image" content="https://www.mywebsite.com/image.jpg" />
+        <meta property="og:image:alt" content="Image description" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mywebsite.com/page" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Theme Color for Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000000" />
+
+        <!-- SVG favicon for modern browsers. -->
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+
+        <!-- The 180×180px icon Apple devices will use if you add the page to your home screen. -->
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+        <!-- Prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs. -->
+        <link rel="canonical" href="https://www.mywebsite.com/page" />
+
+        <!-- inject:css -->
+        <!-- endinject -->
+
+        <link rel="stylesheet" href="./css/index.min.css" />
+
+        <script src="https://kit.fontawesome.com/1fd09514ac.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <a class="scrollup__link" href="#header"><i class="fa-solid fa-angle-up"></i></a>
+            <header class="header">
+                <div class="header__top container">
+                    <div class="header__top-slogan">
+                        <svg class="header__top-slogan-icon" width="25px" height="20px">
+                            <use href="./images/svg/symbol-defs.svg#icon-tag"></use>
+                        </svg>
+                        <span class="header__top-slogan-text"
+                            >Free Shipping World Wide Order Over On $199.00</span
+                        >
+                    </div>
+                    <div class="header__top-option">
+                        <div class="header__top-option-button-box">
+                            <button class="header__top-option-button">
+                                United States (USD $)<i class="fa-solid fa-angle-down"></i>
+                            </button>
+                        </div>
+                        <div class="header__top-option-button-box">
+                            <button class="header__top-option-button">
+                                English<i class="fa-solid fa-angle-down"></i>
+                            </button>
+                        </div>
+                        <a href="#" class="header__top-option-link">Wishlist</a>
+                    </div>
+                </div>
+
+                <div class="header__inner container">
+                    <a href="#" class="header__inner-logo">
+                        <img src="./images/logo.webp" alt="" class="header__inner-logo-img" />
+                    </a>
+                    <div class="header__inner-search">
+                        <input
+                            class="header__inner-search-input"
+                            type="search"
+                            name="search"
+                            placeholder="Search"
+                        />
+                        <button class="header__inner-search-button">
+                            <svg class="header__inner-search-icon" width="20px" height="20px">
+                                <use href="./images/svg/symbol-defs.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header__inner-support">
+                        <svg class="header__inner-support-icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-hours"></use>
+                        </svg>
+                        <div class="header__inner-support-text-box">
+                            <span class="header__inner-support-text">(+91) 012 1544 489</span>
+                            <span class="header__inner-support-info">Customer Support</span>
+                        </div>
+                    </div>
+                    <div class="header__inner-user">
+                        <div class="header__inner-user-account">
+                            <a class="header__inner-user-link">
+                                <svg class="header__inner-user-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-user"></use>
+                                </svg>
+                                <span class="header__inner-user-name"> My Account</span>
+                            </a>
+                        </div>
+                        <div class="header__inner-user-account header__inner-basket">
+                            <a class="header__inner-user-link">
+                                <svg class="header__inner-user-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                </svg>
+                                <span class="header__inner-user-name">My Cart </span>
+                                <span class="header__inner-cart">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__inner-search-mob container">
+                    <input
+                        class="header__inner-search-mob-input"
+                        type="search"
+                        name="search"
+                        placeholder="Search"
+                    />
+                    <button class="header__inner-search-mob-button">
+                        <svg class="header__inner-search-icon" width="20px" height="20px">
+                            <use href="./images/svg/symbol-defs.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <nav class="navigation container">
+                <button class="navigation__button">
+                    <i class="fa-solid fa-align-left"></i>
+                    <span>All Categories</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="navigation__menu">
+                    <ul class="navigation__menu-list">
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">Home</a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">Top Product</a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">Special Product</a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">Blog</a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">About Us</a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="navigation__menu-action">GET 20% OFF On Selected Items</a>
+                </div>
+            </nav>
+            <main class="main">
+                <div class="product-content container-tablet">
+                <div class="content container-mobile">
+                    <div class="banner">
+                        <div class="banner__main">
+                            <img
+                                class="banner__main-images"
+                                src="./images/s1.webp"
+                                alt="main-img"
+                            />
+                            <div class="banner__main-text">
+                                <span class="banner__main-pretitle">Spring - summer 2022</span>
+                                <h2 class="banner__main-title">Super Sale 2022</h2>
+                                <button class="banner__main-button">View Collection</button>
+                            </div>
+                            <div class="banner__main-nav">
+                                <button
+                                    class="banner__main-nav-button banner__main-nav-button-left"
+                                ></button>
+                                <button
+                                    class="banner__main-nav-button banner__main-nav-button-right"
+                                ></button>
+                            </div>
+                        </div>
+                        <div class="banner__other">
+                            <div class="banner__other-box">
+                                <a class="banner__other-link" href="#">
+                                    <img
+                                        class="banner__other-img"
+                                        src="./images/r1.webp"
+                                        alt="img"
+                                    />
+                                </a>
+
+                                <div class="banner__other-top-text">
+                                    <span class="banner__other-pretitle">Up To 60% Off</span>
+                                    <h3 class="banner__other-title">Women Fashion</h3>
+                                    <a class="banner__other-link" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="banner__other-box">
+                                <a class="banner__other-link" href="#">
+                                    <img
+                                        class="banner__other-img"
+                                        src="./images/r2.webp"
+                                        alt="img"
+                                    />
+                                </a>
+
+                                <div class="banner__other-bottom-text">
+                                    <span class="banner__other-pretitle">Up To 30% Off</span>
+                                    <h3 class="banner__other-title">New Smart Mobile</h3>
+                                    <a class="banner__other-link" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="top">
+                        <div class="top__box">
+                        <h2 class="top__box-title">Top Product</h2>
+                        <div class="top__box-nav">
+                        <ul class="top__box-list">
+                            <li class="top__box-item">
+                                <a href="#" class="top__box-link">Featured</a>
+                            </li>
+                            <li class="top__box-item">
+                                <a href="#" class="top__box-link">Latest</a>
+                            </li>
+                            <li class="top__box-item">
+                                <a href="#" class="top__box-link">Bestseller</a>
+                            </li>
+                        </ul>
+                        <div class="top__box-buttons">
+                            <button class="top__box-button"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="top__box-button"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        </div>
+                        </div>
+                        <ul class="top__list">
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/38.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <span class="rating">(0)</span>
+                                </div>
+                                <a class="top__item-link">BL Go PLUS Bluetooth Speaker</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >                                
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">Add To Cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/39.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">Bajaj GX1 500 W Camera</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >
+                                    <span class="top__item-old-price"
+                                        >$9.00</span
+                                    >
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-pink-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/40.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <spa class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">15 Core I5 8th Gen LED TV</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >
+                                    <span class="top__item-old-price"
+                                        >$9.00</span
+                                    >
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/41.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">RDP smart laptops</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >                                
+                                    
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/42.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">Over-Ear USB Headset</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >
+                                    <span class="top__item-old-price"
+                                        >$9.00</span
+                                    >
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                    </ul>
+                    </section>
+
+                    <section class="special">
+                        <div class="special__box">
+                            <h2 class="special__box-title">Special Products</h2>
+                            <div class="special__box-buttons">
+                                <button class="special__box-button"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="special__box-button"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                            </div>
+                            <div class="special__product-list">
+                            <div class="special__product">
+                                <div class="special__product-box">
+                                    <a class="special__product-img-link" href="#">
+                                        <img
+                                            class="special__product-img"
+                                            src="./images/38.webp"
+                                            alt="img"
+                                        />
+                                    </a>
+                                    <div class="special__product-box-tab">
+                                    <div class="special__product-info">
+                                        <div class="special__product-info-rating">
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <span class="rating">(0)</span>
+                                        </div>
+                                        <a class="special__product-link">BL Go PLUS Bluetooth Speaker</a>
+                                        <div class="special__product-info-price">
+                                            <span class="special__product-new-price"
+                                                >$6.00 USD</span
+                                            >
+                                                                            
+                                        </div>
+                                        <span class="special__product-text">Vivamus quis pellentesque nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi magna neque, finibus ut ultricies vitae, bibendum ut elit. Aliquam erat erat, egestas...</span>
+                                    </div>
+                                        <div class="top__action">
+                                            <button class="top__action-button top__action-button-laptop">Add To Cart</button>
+                                            <button class="top__action-button top__action-button-mob">
+                                                <svg class="top__action-icon" width="18px" height="18px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                            </svg>
+                                        </button>
+                                            <button class="top__action-button">
+                                                <svg class="top__action-icon" width="18px" height="18px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                            </svg>
+                                        </button>
+                                            <button class="top__action-button">
+                                                <svg class="top__action-icon" width="18px" height="18px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                            </svg></button>
+                                        </div> 
+                                    </div> 
+                                    </div>
+                                <div class="special__product-timer">
+                                    <div class="special__product-timer-text">
+                                    <span class="special__product-timer-begin">Hurry Up!</span>
+                                    <span class="special__product-timer-end">Offer Ends In:</span>
+                                    </div>
+                                    <div class="special__product-timer-time">
+                                        <span>586 d :  07 h :  00 m :  04 s</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="special__product">
+                                <div class="special__product-box">
+                                    <a class="special__product-img-link" href="#">
+                                        <img
+                                            class="special__product-img"
+                                            src="./images/41.webp"
+                                            alt="img"
+                                        />
+                                    </a>
+                                    <div class="special__product-box-tab">
+                                    <div class="special__product-info">
+                                        <div class="special__product-info-rating">
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <i class="fa-solid fa-star star-gold"></i>
+                                            <span class="rating">(0)</span>
+                                        </div>
+                                        <a class="special__product-link">RDP smart laptops</a>
+                                        <div class="special__product-info-price">
+                                            <span class="special__product-new-price"
+                                                >$8.00 USD</span
+                                            >
+                                                                            
+                                        </div>
+                                        <span class="special__product-text">Aliquam id rhoncus metus. Mauris lobortis efficitur libero, id volutpat leo suscipit ac. Sed id venenatis metus, eu feugiat elit. Suspendisse eu nibh at augue volutpat...</span>
+                                    </div>
+                                        <div class="top__action">
+                                            <button class="top__action-button top__action-button-laptop">Add To Cart</button>
+                                            <button class="top__action-button top__action-button-mob">
+                                                <svg class="top__action-icon" width="18px" height="18px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                            </svg>
+                                        </button>
+                                            <button class="top__action-button">
+                                                <svg class="top__action-icon" width="18px" height="18px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                            </svg>
+                                        </button>
+                                            <button class="top__action-button">
+                                                <svg class="top__action-icon" width="18px" height="18px">
+                                                <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                            </svg></button>
+                                        </div>
+                                    </div>  
+                                    </div>
+                                <div class="special__product-timer">
+                                    <div class="special__product-timer-text">
+                                    <span class="special__product-timer-begin">Hurry Up!</span>
+                                    <span class="special__product-timer-end">Offer Ends In:</span>
+                                    </div>
+                                    <div class="special__product-timer-time">
+                                        <span>574 d :   07 h :   00 m :   04 s</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="banner__new-collection">
+                        <a href="#" class="banner__new-collection-img-link">
+                            <img class="banner__new-collection-img" src="./images/offer.webp" alt="banner-new-collection">
+                        </a>
+                        <div class="banner__new-collection-text">
+                            <h2 class="new-collection-title">New Collection 2022</h2>
+                            <p class="new-collection-text">Cum sociis natoque penatibus magnis dis parturient montes have sedss don even sociis natoque slightly the lacinia bibendum</p>
+                            <button class="new-collection-button">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <section class="top-category">
+                        <div class="special__box">
+                            <h2 class="special__box-title">Top Category</h2>
+                            <div class="special__box-buttons">
+                                <button class="special__box-button"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="special__box-button"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                            </div>
+                        <ul class="top-category__list">
+                            <li class="top-category__item">
+                                <a href="#" class="top-category__link">
+                                    <img class="top-category__img" src="./images/20.webp" alt="img">
+                                    <span class="top-category__link-name">Accessories</span>
+                                    <span class="top-category__link-action">Shop now</span>
+                                </a>
+                            </li>
+                            <li class="top-category__item">
+                                <a href="#" class="top-category__link">
+                                    <img class="top-category__img" src="./images/21.webp" alt="img">
+                                    <span class="top-category__link-name">Cosmatic</span>
+                                    <span class="top-category__link-action">Shop now</span>
+                                </a>
+                            </li>
+                            <li class="top-category__item">
+                                <a href="#" class="top-category__link">
+                                    <img class="top-category__img" src="./images/22.webp" alt="img">
+                                    <span class="top-category__link-name">Electronic</span>
+                                    <span class="top-category__link-action">Shop now</span>
+                                </a>
+                            </li>
+                            <li class="top-category__item">
+                                <a href="#" class="top-category__link">
+                                    <img class="top-category__img" src="./images/23.webp" alt="img">
+                                    <span class="top-category__link-name">Fruits</span>
+                                    <span class="top-category__link-action">Shop now</span>
+                                </a>
+                            </li>
+                            <li class="top-category__item">
+                                <a href="#" class="top-category__link">
+                                    <img class="top-category__img" src="./images/24.webp" alt="img">
+                                    <span class="top-category__link-name">Furniture</span>
+                                    <span class="top-category__link-action">Shop now</span>
+                                </a>
+                            </li>
+                            <li class="top-category__item">
+                                <a href="#" class="top-category__link">
+                                    <img class="top-category__img" src="./images/25.webp" alt="img">
+                                    <span class="top-category__link-name">Smart Tv</span>
+                                    <span class="top-category__link-action">Shop now</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="toprated-products">
+                        <div class="special__box">
+                            <h2 class="special__box-title">Toprated Products</h2>
+                            <div class="special__box-buttons">
+                                <button class="special__box-button"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="special__box-button"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="toprated-products__list">
+                        <div class="toprated-products__item">
+                            <div class="toprated-products__item-other-photo">
+                                <img class="toprated-products__other-img" src="./images/70.webp" alt="img">
+                                <img class="toprated-products__other-img" src="./images/71.webp" alt="img">
+                                <img class="toprated-products__other-img" src="./images/72.webp" alt="img">
+                            </div>
+                            <div class="toprated-products__item-main">
+                            <a href="#">
+                                <img
+                                    class="toprated-products-img"
+                                    src="./images/90.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="toprated-products-info">
+                                <div class="toprated-products-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="toprated-products-link">RDP smart laptops</a>
+                                <div class="toprated-products-info-price">
+                                    <span class="toprated-products-new-price"
+                                        >$6.00 USD</span
+                                    >                                
+                                    <span class="toprated-products-old-price"
+                                        >$8.00 USD</span
+                                    >
+                                </div>
+                                <div class="toprated-products__action">
+                                    <button class="toprated-products__action-button toprated-products__action-button-laptop">add to cart</button>
+                                    <button class="toprated-products__action-button toprated-products__action-button-mob">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="toprated-products__action-button">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="toprated-products__action-button">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="toprated-products__item">
+                            <div class="toprated-products__item-other-photo">
+                                <img class="toprated-products__other-img" src="./images/73.webp" alt="img">
+                                <img class="toprated-products__other-img" src="./images/74.webp" alt="img">
+                                <img class="toprated-products__other-img" src="./images/75.webp" alt="img">
+                            </div>
+                            <div class="toprated-products__item-main">
+                            <a href="#">
+                                <img
+                                    class="toprated-products-img"
+                                    src="./images/91.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="toprated-products-info">
+                                <div class="toprated-products-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="toprated-products-link">Over-Ear USB Headset</a>
+                                <div class="toprated-products-info-price">
+                                    <span class="toprated-products-new-price"
+                                        >$6.00 USD</span
+                                    >                                
+                                    <span class="toprated-products-old-price"
+                                        >$8.00 USD</span
+                                    >
+                                </div>
+                                <div class="toprated-products__action">
+                                    <button class="toprated-products__action-button toprated-products__action-button-laptop">add to cart</button>
+                                    <button class="toprated-products__action-button toprated-products__action-button-mob">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="toprated-products__action-button">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="toprated-products__action-button">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="toprated-products__item">
+                            <div class="toprated-products__item-other-photo">
+                                <img class="toprated-products__other-img" src="./images/76.webp" alt="img">
+                                <img class="toprated-products__other-img" src="./images/77.webp" alt="img">
+                                <img class="toprated-products__other-img" src="./images/78.webp" alt="img">
+                            </div>
+                            <div class="toprated-products__item-main">
+                            <a href="#">
+                                <img
+                                    class="toprated-products-img"
+                                    src="./images/92.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="toprated-products-info">
+                                <div class="toprated-products-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="toprated-products-link">Smartphone 16GB Blue</a>
+                                <div class="toprated-products-info-price">
+                                    <span class="toprated-products-new-price"
+                                        >$6.00 USD</span
+                                    >                                
+                                    <span class="toprated-products-old-price"
+                                        >$8.00 USD</span
+                                    >
+                                </div>
+                                <div class="toprated-products__action">
+                                    <button class="toprated-products__action-button toprated-products__action-button-laptop">add to cart</button>
+                                    <button class="toprated-products__action-button toprated-products__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="toprated-products__action-button">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="toprated-products__action-button">
+                                        <svg class="toprated-products__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <div class="banners-sale">
+                        <div class="banners-sale__box">
+                        <a href="#" class="banner-sale__img-link">
+                            <img class="banner-sale__img" src="./images/sale-1.webp" alt="banner-new">
+                        </a>
+                        <div class="banner-sale__text">
+                            <span class="sale-pretitle">Get Up to 30% off</span>
+                            <h2 class="sale-title">New Brand Shoes</h2>
+                            <button class="sale-button">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <div class="banners-sale__box">
+                        <a href="#" class="banner-sale__img-link">
+                            <img class="banner-sale__img" src="./images/sale-2.webp" alt="banner-new">
+                        </a>
+                        <div class="banner-sale__text">
+                            <span class="sale-pretitle">Get Up to 60% off</span>
+                            <h2 class="sale-title">New Furniture Design</h2>
+                            <button class="sale-button">Shop Now</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <section class="top new-product">
+                        <div class="special__box">
+                            <h2 class="special__box-title">New Product</h2>
+                            <div class="special__box-buttons">
+                                <button class="special__box-button"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="special__box-button"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                            </div>
+                        <ul class="top__list">
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/39.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <i class="fa-solid fa-star star-gold"></i>
+                                    <span class="rating">(0)</span>
+                                </div>
+                                <a class="top__item-link">BL Go PLUS Bluetooth Speaker</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >                                
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">Add To Cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/41.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">Bajaj GX1 500 W Camera</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >
+                                    <span class="top__item-old-price"
+                                        >$9.00</span
+                                    >
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-pink-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/40.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <spa class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">15 Core I5 8th Gen LED TV</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >
+                                    <span class="top__item-old-price"
+                                        >$9.00</span
+                                    >
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/43.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">RDP smart laptops</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >                                
+                                    
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                        <li class="top__item">
+                            <a href="#">
+                                <img
+                                    class="top__item-img"
+                                    src="./images/44.webp"
+                                    alt="img"
+                                />
+                            </a>
+                            <div class="top__item-info">
+                                <div class="top__item-info-rating">
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <i class="fa-solid fa-star star-grey"></i>
+                                    <span class="rating">(1)</span>
+                                </div>
+                                <a class="top__item-link">Over-Ear USB Headset</a>
+                                <div class="top__item-info-price">
+                                    <span class="top__item-new-price"
+                                        >$6.00</span
+                                    >
+                                    <span class="top__item-old-price"
+                                        >$9.00</span
+                                    >
+                                </div>
+                                <div class="top__item-input">
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color" checked>
+                                    <div class="color-blue-box box"></div>
+                                </label>
+                                <label class="top__label">
+                                    <input class="top__input" type="radio" name = "color">
+                                    <div class="color-grey-box box"></div>
+                                </label>
+                                </div>
+                                <div class="top__action">
+                                    <button class="top__action-button top__action-button-laptop">add to cart</button>
+                                    <button class="top__action-button top__action-button-mob">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-heart"></use>
+                                    </svg>
+                                </button>
+                                    <button class="top__action-button">
+                                        <svg class="top__action-icon" width="18px" height="18px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-eye"></use>
+                                    </svg></button>
+                                </div>
+                        </li>
+                    </ul>
+                    </section>
+
+                    <div class="categories">
+                        <div class="categories__box">
+                            <h2 class="categories__box-title">Categories Product</h2>
+                            <div class="categories__box-buttons">
+                                <button class="categories__box-button-mobile">
+                                    <svg class="categories__box-button-mobile-icon" width="15px" height="20px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                                    </svg>
+                                </button>
+                                <button class="categories__box-button"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="categories__box-button"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                            </div>
+                            <div class="categories__main">
+                                <div class="main-category__box">
+                            <ul class="main-category">
+                                <li class="main-category-item">
+                                    <a href="#" class="main-category-link">
+                                        <span>Camera</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="main-category-item">
+                                    <a href="#" class="main-category-link">
+                                        <span>Cosmatic</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="main-category-item">
+                                    <a href="#" class="main-category-link">
+                                    <span>Electronic</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="main-category-item">
+                                    <a href="#" class="main-category-link">
+                                    <span>Furniture</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="main-category-item">
+                                    <a href="#" class="main-category-link">
+                                    <span>Laptop</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li class="main-category-item">
+                                    <a href="#" class="main-category-link">
+                                    <span>Smart Tv</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> 
+
+                        <div class="category-list__box">
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a class="category-link-img" href="#">
+                                            <img
+                                                class="category-img"
+                                                src="./images/80.webp"
+                                                alt="img"
+                                            />
+                                        </a>
+                                        <div class="category-info">
+                                            <div class="category-info-rating">
+                                                <i class="fa-solid fa-star star-gold"></i>
+                                                <i class="fa-solid fa-star star-gold"></i>
+                                                <i class="fa-solid fa-star star-gold"></i>
+                                                <i class="fa-solid fa-star star-gold"></i>
+                                                <i class="fa-solid fa-star star-gold"></i>
+                                                <span class="rating">(1)</span>
+                                            </div>
+                                            <a class="category-info-link">Bajaj GX1 500 W Camera</a>
+                                            <div class="category-info-price">
+                                                <span class="category-info-new-price"
+                                                    >$6.00 USD</span
+                                                >
+                                               
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a class="category-link-img" href="#">
+                                            <img
+                                                class="category-img"
+                                                src="./images/84.webp"
+                                                alt="img"
+                                            />
+                                        </a>
+                                        <div class="category-info">
+                                            <div class="category-info-rating">
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <span class="rating">(0)</span>
+                                            </div>
+                                            <a class="category-info-link"
+                                                >15 Core I5 8th Gen LED TV</a
+                                            >
+                                            <div class="category-info-price">
+                                                <span class="category-info-new-price"
+                                                    >$5.00 USD</span
+                                                >
+                                                <span class="category-info-old-price"
+                                                    >$6.00 USD</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a class="category-link-img" href="#">
+                                            <img
+                                                class="category-img"
+                                                src="./images/82.webp"
+                                                alt="img"
+                                            />
+                                        </a>
+                                        <div class="category-info">
+                                            <div class="category-info-rating">
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <span class="rating">(0)</span>
+                                            </div>
+                                            <a class="category-info-link">Over-Ear USB Headset</a>
+                                            <div class="category-info-price">
+                                                <span class="category-info-new-price"
+                                                    >$5.00 USD</span
+                                                >
+                                                <span class="category-info-old-price"
+                                                    >$6.00 USD</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a class="category-link-img" href="#">
+                                            <img
+                                                class="category-img"
+                                                src="./images/81.webp"
+                                                alt="img"
+                                            />
+                                        </a>
+                                        <div class="category-info">
+                                            <div class="category-info-rating">
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <span class="rating">(0)</span>
+                                            </div>
+                                            <a class="category-info-link"
+                                                >Wireless Z Bluetooth Headset</a
+                                            >
+                                            <div class="category-info-price">
+                                                <span class="category-info-new-price"
+                                                    >$5.00 USD</span
+                                                >
+                                                <span class="category-info-old-price"
+                                                    >$6.00 USD</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a class="category-link-img" href="#">
+                                            <img
+                                                class="category-img"
+                                                src="./images/84.webp"
+                                                alt="img"
+                                            />
+                                        </a>
+                                        <div class="category-info">
+                                            <div class="category-info-rating">
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <span class="rating">(0)</span>
+                                            </div>
+                                            <a class="category-info-link">Over-Ear USB Headset</a>
+                                            <div class="category-info-price">
+                                                <span class="category-info-new-price"
+                                                    >$5.00 USD</span
+                                                >
+                                                <span class="category-info-old-price"
+                                                    >$6.00 USD</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a class="category-link-img" href="#">
+                                            <img
+                                                class="category-img"
+                                                src="./images/83.webp"
+                                                alt="img"
+                                            />
+                                        </a>
+                                        <div class="category-info">
+                                            <div class="category-info-rating">
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <i class="fa-solid fa-star star-grey"></i>
+                                                <span class="rating">(0)</span>
+                                            </div>
+                                            <a class="category-info-link">Over-Ear USB Headset</a>
+                                            <div class="category-info-price">
+                                                <span class="category-info-new-price"
+                                                    >$5.00 USD</span
+                                                >
+                                                <span class="category-info-old-price"
+                                                    >$6.00 USD</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="sidebar__category">
+                        <ul class="sidebar__category-list">
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Catalog</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Table</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Accessories</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Sofa</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Shop</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Camera</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Cosmatic</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Electronic</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Furniture</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Laptop</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link">Phone</a>
+                            </li>
+                            <li class="sidebar__category-item">
+                                <a href="#" class="sidebar__category-link"
+                                    ><i class="fa-solid fa-plus"></i>More</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__banner">
+                        <a class="sidebar__banner-link" href="#">
+                            <img class="sidebar__banner-img" src="./images/l1.webp" alt="img" />
+                        </a>
+                        <div class="sidebar__banner-text">
+                            <span class="sidebar__banner-pretitle">Up To 60% Off</span>
+                            <h3 class="sidebar__banner-title">Fashion Footwear</h3>
+                            <a class="sidebar__banner-link" href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="sidebar__benefits">
+                        <ul class="sidebar__benefits-list">
+                            <li class="sidebar__benefits-item">
+                                <svg class="sidebar__benefits-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                                <div class="sidebar__benefits-text">
+                                    <span class="sidebar__benefits-name">24 x 7 free Support</span>
+                                    <span class="sidebar__benefits-info"
+                                        >Online Support 24 / 7</span
+                                    >
+                                </div>
+                            </li>
+                            <li class="sidebar__benefits-item">
+                                <svg class="sidebar__benefits-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-truck"></use>
+                                </svg>
+                                <div class="sidebar__benefits-text">
+                                    <span class="sidebar__benefits-name">Worldwide Shipping</span>
+                                    <span class="sidebar__benefits-info">On Order Over $99</span>
+                                </div>
+                            </li>
+                            <li class="sidebar__benefits-item">
+                                <svg class="sidebar__benefits-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-money-bag"></use>
+                                </svg>
+                                <div class="sidebar__benefits-text">
+                                    <span class="sidebar__benefits-name">Money Gaurantee</span>
+                                    <span class="sidebar__benefits-info">100% Secure Payment</span>
+                                </div>
+                            </li>
+                            <li class="sidebar__benefits-item">
+                                <svg class="sidebar__benefits-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-gift"></use>
+                                </svg>
+                                <div class="sidebar__benefits-text">
+                                    <span class="sidebar__benefits-name">Win $100 To Voucher</span>
+                                    <span class="sidebar__benefits-info"
+                                        >Give The Perfect Gift</span
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar__popular">
+                        <div class="sidebar__popular-title">
+                            <h3 class="sidebar__popular-name">Popular Products</h3>
+                            <div class="sidebar__popular-title-buttons">
+                                <button class="sidebar__popular-title-button"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="sidebar__popular-title-button"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <ul class="sidebar__popular-list">
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/80.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-gold"></i>
+                                        <i class="fa-solid fa-star star-gold"></i>
+                                        <i class="fa-solid fa-star star-gold"></i>
+                                        <i class="fa-solid fa-star star-gold"></i>
+                                        <i class="fa-solid fa-star star-gold"></i>
+                                        <span class="rating">(1)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link">Bajaj GX1 500 W Camera</a>
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$6.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$9.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/84.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link"
+                                        >15 Core I5 8th Gen LED TV</a
+                                    >
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$5.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$6.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/82.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link">Over-Ear USB Headset</a>
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$5.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$6.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/81.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link"
+                                        >Wireless Z Bluetooth Headset</a
+                                    >
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$5.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$6.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/83.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link">Over-Ear USB Headset</a>
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$5.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$6.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar__banner">
+                        <a class="sidebar__banner-link" href="#">
+                            <img class="sidebar__banner-img" src="./images/l2.webp" alt="img" />
+                        </a>
+                        <div class="sidebar__banner-text">
+                            <span class="sidebar__banner-pretitle">Up To 50% Off</span>
+                            <h3 class="sidebar__banner-title">New iPhone 11 Pro</h3>
+                            <a class="sidebar__banner-link" href="#">Shop Now</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__dev">
+                        <img class="sidebar__dev-img" src="./images/test.webp" alt="img" />
+                        <p class="sidebar__dev-text">
+                            Sed elit quam, iaculis the sed semper sit amet udin vitae nibh. at magna
+                            akal semper sema olatiup sema olatiup udin vitae.
+                        </p>
+                        <span class="sidebar__dev-name">Ms. Bella</span>
+                        <span class="sidebar__dev-position">Developer</span>
+                        <div class="sidebar__dev-buttons">
+                            <button class="sidebar__dev-button"></button>
+                            <button class="sidebar__dev-button"></button>
+                            <button class="sidebar__dev-button"></button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__popular">
+                        <div class="sidebar__popular-title">
+                            <h3 class="sidebar__popular-name">Best Products</h3>
+                            <div class="sidebar__popular-title-buttons">
+                                <button class="sidebar__popular-title-button"><i class="fa-solid fa-angle-left"></i></button>
+                                <button class="sidebar__popular-title-button"><i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <ul class="sidebar__popular-list">
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/84.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(1)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link"
+                                        >BL Go PLUS Bluetooth Speaker</a
+                                    >
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$2.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/81.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link">Bajaj GX1 500 W Camera</a>
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$6.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$9.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/82.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link"
+                                        >15 Core I5 8th Gen LED TV</a
+                                    >
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$5.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$6.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/83.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link">RDP smart laptops</a>
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$8.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidebar__popular-item">
+                                <a class="sidebar__popular-link-img" href="#">
+                                    <img
+                                        class="sidebar__popular-img"
+                                        src="./images/85.webp"
+                                        alt="img"
+                                    />
+                                </a>
+                                <div class="sidebar__popular-info">
+                                    <div class="sidebar__popular-info-rating">
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <i class="fa-solid fa-star star-grey"></i>
+                                        <span class="rating">(0)</span>
+                                    </div>
+                                    <a class="sidebar__popular-info-link">Over-Ear USB Headset</a>
+                                    <div class="sidebar__popular-info-price">
+                                        <span class="sidebar__popular-info-new-price"
+                                            >$5.00 USD</span
+                                        >
+                                        <span class="sidebar__popular-info-old-price"
+                                            >$6.00 USD</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar__tag sidebar__popular">
+                        <div class="sidebar__popular-title sidebar__tag-title">
+                            <h3 class="sidebar__popular-name">Product Tag</h3>
+                        </div>    
+                        <ul class="sidebar__tag-list">
+                            <li class="sidebar__tag-item">
+                             <a class="sidebar__tag-link">Sofa</a>
+                            </li>
+                            <li class="sidebar__tag-item">
+                              <a class="sidebar__tag-link">Chair</a>
+                            </li>
+                            <li class="sidebar__tag-item">
+                               <a class="sidebar__tag-link">Table</a>
+                            </li>
+                            <li class="sidebar__tag-item">
+                                <a class="sidebar__tag-link">Living Room</a>
+                                </li>
+                            <li class="sidebar__tag-item">
+                                <a class="sidebar__tag-link">lamp</a>
+                            </li>
+                            <li class="sidebar__tag-item">
+                                <a class="sidebar__tag-link">Night Stand</a>
+                            </li>
+                            <li class="sidebar__tag-item">
+                                <a class="sidebar__tag-link">Computer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+                <section class="blog container">
+                    <div class="blog__box">
+                        <h2 class="blog__box-title">Latest Blog</h2>
+                        <div class="blog__box-buttons">
+                            <button class="blog__box-button"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="blog__box-button"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        </div>
+                        <div class="article-box">
+                        <article class="article-item">
+                            <a class="article-link" href="#">
+                                <img class="article-img" src="./images/6.webp" alt="img-blog">
+                                <h4 class="article-title">Mauris in viverra augue, at egestas purus</h4>
+                            </a>
+                                <p class="article-text">Vivamus porta lacinia risus quis blandit. Suspendisse potenti. In quis dignissim nunc. Quisque laoreet ipsum at metus tristique vestibulum. Pellentesque vel gravida nunc, sed rutrum nisi. Etiam quis gravida est. Proin tristique lacinia quam, at dignissim nulla ultricies vitae. Duis...</p>
+                                <div class="article-more">
+                                    <span class="article-caption">storego-demo Admin</span>
+                                    <a class="article-read-more" href="#">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                        </article>
+                        <article class="article-item">
+                            <a class="article-link" href="#">
+                                <img class="article-img" src="./images/7.webp" alt="img-blog">
+                                <h4 class="article-title">Praesent eget nulla dui. Orci varius</h4>
+                            </a>
+                                <p class="article-text">Nulla scelerisque consectetur tellus, et dapibus orci tincidunt sit amet. Nunc malesuada nulla felis, at sollicitudin odio laoreet ac. Nulla a finibus libero. Nunc eget ipsum libero. Vivamus faucibus malesuada malesuada. Nulla facilisi. Pellentesque lobortis, tellus blandit ornare luctus, ante...</p>
+                                <div class="article-more">
+                                    <span class="article-caption">storego-demo Admin</span>
+                                    <a class="article-read-more" href="#">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                        </article>
+                        <article class="article-item">
+                            <a class="article-link" href="#">
+                                <img class="article-img" src="./images/8.webp" alt="img-blog">
+                                <h4 class="article-title">Nam et ullamcorper diam.</h4>
+                            </a>
+                                <p class="article-text">Donec porta varius est eget imperdiet. Donec auctor feugiat sapien id scelerisque. Cras eleifend, ligula quis molestie tristique, nisl tellus tempor neque, ac iaculis ligula justo sed risus. Aenean interdum eros et porttitor hendrerit. Pellentesque lectus augue, tempor quis fermentum...</p>
+                                <div class="article-more">
+                                    <span class="article-caption">storego-demo Admin</span>
+                                    <a class="article-read-more" href="#">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                        </article>
+                        <article class="article-item">
+                            <a class="article-link" href="#">
+                                <img class="article-img" src="./images/9.webp" alt="img-blog">
+                                <h4 class="article-title">Praesent euismod quam id urna pharetra pulvinar.</h4>
+                            </a>
+                                <p class="article-text">Nunc mollis eros eu lectus sagittis, sit amet luctus magna efficitur. Nam congue viverra metus, sed posuere turpis elementum id. Nam tempus nunc eget lorem venenatis, a tempus nisi porta. Curabitur vitae nisi a felis mattis placerat. Vivamus tortor massa,...</p>
+                                <div class="article-more">
+                                    <span class="article-caption">storego-demo Admin</span>
+                                    <a class="article-read-more" href="#">Read More<i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                        </article>
+                    </div>
+                </section>
+                <div class="logobar container">
+                    <ul class="logobar-list">
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand1.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand2.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand3.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand4.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand5.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand6.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand7.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                        <li class="logobar-item">
+                            <a href="#" class="logobar-link">
+                                <img src="./images/brand8.webp" alt="" class="logobar-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                <div class="footer__group-box">
+                    <div class="footer__group">
+                        <div class="footer__group-contact">
+                            <h3 class="footer__group-title">Categories
+                                <svg class="footer__group-title-icon" width="12px" height="12px">
+                                <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                            </svg></h3>
+                            <ul class="footer__group-list">
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Featured Product</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Laptop</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Phone</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Speakers</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Television</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__group-contact">
+                            <h3 class="footer__group-title">Service
+                                <svg class="footer__group-title-icon" width="12px" height="12px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                                </svg>
+                            </h3>
+                            <ul class="footer__group-list">
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">About us</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Contact Us</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Information</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Privacy & Policy</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__group-contact">
+                            <h3 class="footer__group-title">Extras
+                                <svg class="footer__group-title-icon" width="12px" height="12px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                                </svg>
+                            </h3>
+                            <ul class="footer__group-list">
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Information</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">wishlist</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">Search</a>
+                                </li>
+                                <li class="footer__group-item">
+                                    <a href="#" class="footer__group-link">All Collections</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__group-contact">
+                            <h3 class="footer__group-title">Contact us
+                                <svg class="footer__group-title-icon" width="12px" height="12px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-plus"></use>
+                                </svg>
+                            </h3>
+                            <ul class="footer__group-list">
+                                <li class="footer__group-item group-contact-item">
+                                    <svg class="footer__group-icon" width="20px" height="20px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-location"></use>
+                                    </svg>
+                                    <span class="footer__group-text">demo store United States.</span>
+                                </li>
+                                <li class="footer__group-item group-contact-item">
+                                    <svg class="footer__group-icon" width="20px" height="20px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-telephone"></use>
+                                    </svg>
+                                    <span class="footer__group-text">0123-456-789</span>
+                                </li>
+                                <li class="footer__group-item group-contact-item">
+                                    <svg class="footer__group-icon" width="20px" height="20px">
+                                        <use href="./images/svg/symbol-defs.svg#icon-email"></use>
+                                    </svg>
+                                    <span class="footer__group-text">demo@demo.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__group-form">
+                        <h3 class="footer__group-title footer__group-form-title">Join our mailing list</h3>
+                        <span class="footer__group-form-text">Subscribe to our newsletter and get 10% off your first purchase</span>
+                        <form class="footer__form" action="GET">
+                            <input class="footer__group-form-input" type="email" name="email" placeholder="Email">
+                            <button class="footer__group-form-button">
+                                <svg class="footer__group-icon" width="23px" height="23px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-sent"></use>
+                                </svg>
+                            </button>
+                        </form> 
+                    </div>
+                </div>
+                <div class="footer__payment">
+                    <div class="payment-system">
+                        <h4 class="footer__payment-title">payment</h4>
+                        <ul class="payment-system-list">
+                            <li class="payment-system-item">
+                                <svg class="payment-system-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-mastercard"></use>
+                                </svg>
+                            </li>
+                            <li class="payment-system-item">
+                                <svg class="payment-system-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-mastercard"></use>
+                                </svg>
+                            </li>
+                            <li class="payment-system-item">
+                                <svg class="payment-system-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-mastercard"></use>
+                                </svg>
+                            </li>
+                            <li class="payment-system-item">
+                                <svg class="payment-system-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-mastercard"></use>
+                                </svg>
+                            </li>
+                            <li class="payment-system-item">
+                                <svg class="payment-system-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-mastercard"></use>
+                                </svg>
+                            </li>
+                            <li class="payment-system-item">
+                                <svg class="payment-system-icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-mastercard"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="payment__app">
+                        <img src="./images/a1.webp" alt="app" width="90px" height="30px">
+                        <img src="./images/a2.webp" alt="app" width="90px" height="30px">
+                    </div>
+                    <div class="footer__contact">
+                        <h4 class="footer__payment-title">Follow Us</h4>
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">
+                                    <svg class="payment-contact-icon">
+                                        <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">
+                                    <svg class="payment-contact-icon">
+                                        <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">
+                                    <svg class="payment-contact-icon">
+                                        <use href="./images/svg/symbol-defs.svg#icon-pinterest"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Pinterest</span>
+                                </a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="#" class="contact-link">
+                                    <svg class="payment-contact-icon">
+                                        <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__tag">
+                    <ul class="footer__tag-list">
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Sofa</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Chair</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Dining Table</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Living Room</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Table Lamp</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Night Stand</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Computer Desk</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Bar Table</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Pillow</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Radio</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Clock</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Bad Room</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Stool</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Television</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Chair</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Dining Table</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Living Room</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Table Lamp</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Night Stand</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Computer Desk</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Bar Table</a>
+                        </li>
+                        <li class="footer__tag-item">
+                            <a href="#" class="footer__tag-link">Pillow</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="footer__copyright">
+                    <span class="footer__copyright-text">&#169;2022</span>
+                    <a class="footer__copyright-link" href="#">storego-demo</a>
+                    <a class="footer__copyright-link" href="#">Powered by Shopify</a>
+                </div>
+            
+            </footer>
+        </div>
+    </body>
+</html>

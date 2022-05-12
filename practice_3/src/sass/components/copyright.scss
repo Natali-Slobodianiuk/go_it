@@ -1,0 +1,32 @@
+.footer__copyright {
+    padding: 10px 0;
+    border-top: 1px solid rgba($border-color, 0.15);
+    text-align: center;
+    @include font-styles-color('Rubic', 14px, $light-color);
+    line-height: 24px;
+
+    &-link {
+        @include font-styles-color('Rubic', 14px, $light-color);
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    &-link:hover {
+        color: $main-color;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer__copyright {
+        padding: 12px 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    .footer__copyright {
+        padding: 12px;
+    }
+
+    .footer__copyright-text,
+    .footer__copyright-link {
+        font-size: 16px;
+    }
+}

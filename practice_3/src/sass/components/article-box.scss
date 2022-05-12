@@ -1,0 +1,5 @@
+.article-box {
+    @media screen and (min-width: 768px) {
+        @include flex-center;
+    }
+}

@@ -1,0 +1,128 @@
+.sale-pretitle {
+    display: none;
+}
+
+.banners-sale__box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banners-sale__box:first-child {
+    margin-bottom: 10px;
+}
+
+.banners-sale__box:hover .banner-sale__img {
+    transform: scale(1.2);
+}
+.banner-sale__img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: 5s ease;
+}
+
+.banner-sale__text {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.sale-title {
+    @include font-styles-color('Rubic', 14px, $dark-color);
+    margin: 0 0 28px;
+}
+
+.sale-button {
+    @include font-styles-color('Rubic', 14px, $light-color);
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+    background-color: #fd6c1e;
+    line-height: 21px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+
+.sale-button:hover {
+    background-color: $dark-color;
+}
+@media screen and (min-width: 768px) {
+    .banners-sale__box {
+        width: 49%;
+    }
+    .banner-sale__text {
+        top: 10px;
+        left: 10px;
+    }
+
+    .sale-pretitle {
+        display: block;
+        @include font-styles-color('Rubic', 14px, rgba($dark-color, 0.5));
+        margin-bottom: 8px;
+    }
+
+    .sale-title {
+        margin-bottom: 8px;
+    }
+
+    .sale-button {
+        padding: 6px 15px;
+        text-transform: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    .banners-sale__box {
+        width: 48%;
+    }
+
+    .sale-title {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .sale-button {
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .banners-sale__box {
+        width: 48.3%;
+    }
+
+    .banner-sale__text {
+        top: 30px;
+        left: 20px;
+    }
+
+    .sale-title {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 1410px) {
+    .banner-sale__text {
+        top: 40px;
+        left: 30px;
+    }
+
+    .sale-title {
+        font-size: 27px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .banners-sale__box {
+        width: 48.8%;
+    }
+
+    .banner-sale__text {
+        top: 60px;
+        left: 40px;
+    }
+
+    .sale-title {
+        font-size: 28px;
+    }
+}

@@ -288,7 +288,7 @@
 .team-list__position {
   font-family: var(--text-font);
   color: var(--color-text);
-  font-style: italic;
+  font-styles: italic;
 }
 
 .team-list__social {
@@ -389,7 +389,7 @@
   border-right: none;
   font-size: 15px;
   font-family: var(--text-font);
-  font-style: italic;
+  font-styles: italic;
   color: #cccccc;
   padding: 0;
 }

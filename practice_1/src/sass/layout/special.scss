@@ -11,13 +11,13 @@
     }
 
     &-pretext {
-        @include font-st('Roboto 900', 18px, $main-color);
+        @include font-styles-color('Roboto 900', 18px, $main-color);
         margin-bottom: 20px;
         display: block;
     }
 
     &-title {
-        @include font-st('Roboto 900', 40px, $max-dark-color);
+        @include font-styles-color('Roboto 900', 40px, $max-dark-color);
         line-height: 60px;
         margin: 0;
     }
@@ -102,7 +102,7 @@
 
     &-guide-firm {
         display: block;
-        @include font-st('Roboto 700', 13px, $menu-light-color);
+        @include font-styles-color('Roboto 700', 13px, $menu-light-color);
     }
 
     &-guide-button {
@@ -119,18 +119,18 @@
     }
 }
 .price {
-    @include font-st('Roboto 500', 18px, $menu-light-color);
+    @include font-styles-color('Roboto 500', 18px, $menu-light-color);
     display: block;
 }
 
 .old-price {
-    @include font-st('Roboto 500', 18px, $menu-light-color);
+    @include font-styles-color('Roboto 500', 18px, $menu-light-color);
     text-decoration-line: line-through;
     margin-right: 15px;
 }
 
 .new-price {
-    @include font-st('Roboto 900', 28px, $max-dark-color);
+    @include font-styles-color('Roboto 900', 28px, $max-dark-color);
 }
 
 .special__list-item:hover .special__list-link {
@@ -151,7 +151,7 @@
 
 .special__button {
     @include button(170px, 50px, $color: $main-color);
-    @include font-st('Roboto 700', 16px, $light-color);
+    @include font-styles-color('Roboto 700', 16px, $light-color);
     border: none;
     border-radius: 25px;
     font-weight: bold;

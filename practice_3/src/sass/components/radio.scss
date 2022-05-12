@@ -1,0 +1,30 @@
+.top__input[type='radio'] {
+    display: none;
+    &:checked {
+        + .box {
+            border: 1px solid rgba($dark-color, 0.8);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba($dark-color, 0.1);
+}
+.color-blue-box {
+    background-color: blue;
+}
+
+.color-grey-box {
+    background-color: grey;
+}
+
+.color-pink-box {
+    background-color: pink;
+}

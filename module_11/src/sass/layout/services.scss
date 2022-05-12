@@ -9,13 +9,13 @@
 
         &__pretitle {
             display: block;
-            @include font-style('Kaushan Script', 24px);
+            @include font-styles('Kaushan Script', 24px);
             font-weight: 600;
             margin-bottom: 25px;
         }
 
         &__title {
-            @include font-style('Montserrat Bold', 30px, uppercase);
+            @include font-styles('Montserrat Bold', 30px, uppercase);
             margin: 0;
         }
         &__title:after {
@@ -46,11 +46,11 @@
     }
 
     .services__name {
-        @include font-style('Montserrat', 14px, uppercase);
+        @include font-styles('Montserrat', 14px, uppercase);
         margin: 0 0 20px;
     }
     .services__description {
-        @include font-style('Roboto', 15px);
+        @include font-styles('Roboto', 15px);
         line-height: 21px;
         margin: 0;
         color: $color-text;

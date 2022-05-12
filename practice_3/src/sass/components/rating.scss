@@ -1,0 +1,12 @@
+.fa-star {
+    font-size: 9px;
+}
+.star-gold {
+    color: #ffcc00;
+}
+.star-grey {
+    color: rgba($dark-color, 0.3);
+}
+.rating {
+    @include font-styles-color('Rubic', 12px, rgba($dark-color, 0.6));
+}

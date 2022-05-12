@@ -8,13 +8,13 @@
 
         &__pretitle {
             display: block;
-            @include font-style('Kaushan Script', 24px);
+            @include font-styles('Kaushan Script', 24px);
             font-weight: 600;
             margin-bottom: 25px;
         }
 
         &__title {
-            @include font-style('Montserrat Bold', 30px, uppercase);
+            @include font-styles('Montserrat Bold', 30px, uppercase);
             margin: 0 0 45px;
         }
 
@@ -24,7 +24,7 @@
             margin: 40px auto 0;
         }
         &__description {
-            @include font-style('Roboto', 15px);
+            @include font-styles('Roboto', 15px);
             color: $color-text;
             line-height: 21px;
             margin: 0;
@@ -72,14 +72,14 @@
         }
         &__name {
             display: block;
-            @include font-style('Montserrat', 14px, uppercase);
+            @include font-styles('Montserrat', 14px, uppercase);
             font-weight: 600;
         }
 
         &__position {
-            @include font-style('Roboto', 15px);
+            @include font-styles('Roboto', 15px);
             color: $color-text;
-            font-style: italic;
+            font-styles: italic;
         }
     }
 

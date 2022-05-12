@@ -11,7 +11,7 @@
 
 .footer__group-title {
     margin: 0 0 10px;
-    @include font-style('Poppins', 16px, uppercase);
+    @include font-styles('Poppins', 16px, uppercase);
     color: $dark-color;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     &-text {
         margin: 0;
         padding: 7px 0;
-        @include font-st('Poppins', 14px, $middle-color);
+        @include font-styles-color('Poppins', 14px, $middle-color);
         text-align: center;
         line-height: 21px;
     }
@@ -91,7 +91,7 @@
     }
 
     .footer__group-title {
-        @include font-style('Poppins', 15px, uppercase);
+        @include font-styles('Poppins', 15px, uppercase);
         color: $dark-color;
         margin-bottom: 20px;
     }
@@ -157,13 +157,13 @@
 
     .footer__group-info-name {
         display: block;
-        @include font-st('Poppins 500', 16px, $dark-color);
+        @include font-styles-color('Poppins 500', 16px, $dark-color);
         margin-bottom: 5px;
     }
 
     .footer__group-info-text,
     .footer__group-info-link {
-        @include font-st('Poppins', 14px, $middle-color);
+        @include font-styles-color('Poppins', 14px, $middle-color);
         display: block;
         line-height: 24px;
     }

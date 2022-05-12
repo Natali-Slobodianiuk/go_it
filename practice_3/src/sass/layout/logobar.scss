@@ -1,0 +1,50 @@
+.logobar-list {
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    @extend %list-style;
+    @include flex-center;
+    padding: 15px;
+}
+.logobar-img {
+    width: 100%;
+    height: auto;
+}
+.logobar-item:nth-child(n + 4) {
+    display: none;
+}
+
+.logobar-item {
+    width: 31%;
+}
+@media screen and (min-width: 768px) {
+    .logobar-item:nth-child(-n + 5) {
+        display: block;
+    }
+
+    .logobar-item {
+        width: 19%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .logobar-item {
+        width: 16.7%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .logobar-item:nth-child(-n + 6) {
+        display: block;
+    }
+
+    .logobar-item {
+        width: 11.7%;
+    }
+}
+@media screen and (min-width: 1410px) {
+    .logobar-item:nth-child(-n + 8) {
+        display: block;
+    }
+
+    .logobar-item {
+        width: 10.2%;
+    }
+}

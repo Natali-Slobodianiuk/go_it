@@ -1,5 +1,5 @@
 .sidebar__title {
-    @include font-st('Poppins', 16px, $dark-color);
+    @include font-styles-color('Poppins', 16px, $dark-color);
     padding: 12px 15px;
     background-color: $background-color;
     margin: 0;
@@ -62,13 +62,13 @@
     }
 
     &-old-price {
-        @include font-st('Poppins', 14px, $middle-color);
+        @include font-styles-color('Poppins', 14px, $middle-color);
         text-decoration: line-through;
         margin-right: 7px;
     }
 
     &-new-price {
-        @include font-st('Poppins 500', 14px, $dark-color);
+        @include font-styles-color('Poppins 500', 14px, $dark-color);
     }
 
     &-review {

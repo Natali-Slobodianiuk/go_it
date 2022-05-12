@@ -1,7 +1,7 @@
 .also-like {
     margin-bottom: 5%;
     &__title {
-        @include font-st('Poppins', 20px, $dark-color);
+        @include font-styles-color('Poppins', 20px, $dark-color);
         margin: 0 0 20px;
         text-align: center;
     }
@@ -61,7 +61,7 @@
 
     &__img-marker {
         background-color: #7fbc1e;
-        @include font-st('Poppins 700', 10px, $light-color);
+        @include font-styles-color('Poppins 700', 10px, $light-color);
         border-radius: 5px;
         display: block;
         padding: 4px 7px;
@@ -95,7 +95,7 @@
         display: block;
         cursor: pointer;
         background-color: $main-color;
-        @include font-st('Poppins', 14px, $light-color);
+        @include font-styles-color('Poppins', 14px, $light-color);
         text-transform: uppercase;
         border: none;
         margin: 0 auto;
@@ -108,7 +108,7 @@
     justify-content: center;
 
     &-text {
-        @include font-st('Poppins', 10px, $dark-color);
+        @include font-styles-color('Poppins', 10px, $dark-color);
         letter-spacing: 0.5rem;
         margin-right: 25px;
     }

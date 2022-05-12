@@ -43,7 +43,7 @@
 
 .size-box {
     border: 1px solid rgba(35, 35, 35, 0.55);
-    @include font-st('Poppins', 18px, $dark-color);
+    @include font-styles-color('Poppins', 18px, $dark-color);
     text-align: center;
     line-height: 40px;
 }

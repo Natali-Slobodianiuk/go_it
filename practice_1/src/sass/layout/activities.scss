@@ -3,7 +3,7 @@
 }
 
 .activities__watermark {
-    @include font-st('Roboto 900', 100px, $watermark-color);
+    @include font-styles-color('Roboto 900', 100px, $watermark-color);
     opacity: 0.04;
     position: absolute;
     top: -20px;
@@ -18,13 +18,13 @@
     position: relative;
 
     &-pretext {
-        @include font-st('Roboto 900', 18px, $main-color);
+        @include font-styles-color('Roboto 900', 18px, $main-color);
         margin-bottom: 20px;
         display: block;
     }
 
     &-title {
-        @include font-st('Roboto 900', 40px, $max-dark-color);
+        @include font-styles-color('Roboto 900', 40px, $max-dark-color);
         line-height: 60px;
         margin: 0;
     }
@@ -96,7 +96,7 @@
         background-color: $background-info-color;
         border-radius: 25px;
         padding: 4px;
-        @include font-st('Roboto 700', 12px, $info-color);
+        @include font-styles-color('Roboto 700', 12px, $info-color);
         margin-right: 5px;
     }
 
@@ -138,7 +138,7 @@
 
     &-guide-firm {
         display: block;
-        @include font-st('Roboto 700', 13px, $menu-light-color);
+        @include font-styles-color('Roboto 700', 13px, $menu-light-color);
     }
 
     &-guide-button {
@@ -157,18 +157,18 @@
     }
 }
 .price {
-    @include font-st('Roboto 500', 18px, $menu-light-color);
+    @include font-styles-color('Roboto 500', 18px, $menu-light-color);
     display: block;
 }
 
 .old-price {
-    @include font-st('Roboto 500', 18px, $menu-light-color);
+    @include font-styles-color('Roboto 500', 18px, $menu-light-color);
     text-decoration-line: line-through;
     margin-right: 15px;
 }
 
 .new-price {
-    @include font-st('Roboto 900', 28px, $max-dark-color);
+    @include font-styles-color('Roboto 900', 28px, $max-dark-color);
 }
 
 .activities__list-item:hover .activities__list-link {

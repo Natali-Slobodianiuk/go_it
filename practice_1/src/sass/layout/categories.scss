@@ -5,7 +5,7 @@
 }
 
 .categories__watermark {
-    @include font-st('Roboto 900', 100px, $watermark-color);
+    @include font-styles-color('Roboto 900', 100px, $watermark-color);
     opacity: 0.04;
     position: absolute;
     top: -20px;
@@ -20,13 +20,13 @@
     position: relative;
 
     &-pretext {
-        @include font-st('Roboto 900', 18px, $main-color);
+        @include font-styles-color('Roboto 900', 18px, $main-color);
         margin-bottom: 20px;
         display: block;
     }
 
     &-title {
-        @include font-st('Roboto 900', 40px, $max-dark-color);
+        @include font-styles-color('Roboto 900', 40px, $max-dark-color);
         line-height: 60px;
         margin: 0;
     }

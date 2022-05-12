@@ -5,11 +5,11 @@
         font-family: quote($font-name);
         src: url(#{$path}.woff) format('woff'), url(#{$path}.woff2) format('woff2');
         font-weight: $weight;
-        font-style: $style;
+        font-styles: $style;
     }
 }
 
-@mixin font-style($font-name, $size, $t-trans: none) {
+@mixin font-styles($font-name, $size, $t-trans: none) {
     font-family: $font-name;
     font-size: $size;
     text-transform: $t-trans;

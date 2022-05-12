@@ -59,18 +59,18 @@
 
     &-pretext {
         display: block;
-        @include font-style('Roboto 700', 18px, uppercase);
+        @include font-styles('Roboto 700', 18px, uppercase);
         color: $main-color;
         margin-bottom: 30px;
     }
 
     &-title {
-        @include font-style('Roboto 900', 60px);
+        @include font-styles('Roboto 900', 60px);
         margin: 0 0 20px;
     }
 
     &-text {
-        @include font-style('Roboto 500', 18px);
+        @include font-styles('Roboto 500', 18px);
         color: $banner-middle-color;
         line-height: 27px;
     }
@@ -79,7 +79,7 @@
 .banner__button {
     @include button(180px, 60px, $color: $main-color);
     @include button-border(1px, solid, $main-color, 5px);
-    @include font-style('Roboto 700', 16px);
+    @include font-styles('Roboto 700', 16px);
     color: $light-color;
     margin: 0 auto;
     padding: 0;
@@ -128,7 +128,7 @@
     &-select,
     &-search-box {
         @include button-border(1px, solid, $light-color, 5px);
-        @include font-style('Roboto 700', 18px);
+        @include font-styles('Roboto 700', 18px);
         box-shadow: 0px 1px 10px $border-color;
         margin-right: 20px;
         height: 40px;
@@ -149,7 +149,7 @@
 
     &-button {
         @include button(160px, 40px, inline-block, $color: $main-color);
-        @include font-style('Roboto 700', 16px);
+        @include font-styles('Roboto 700', 16px);
         @include button-border(1px, solid, $main-color, 5px);
         color: $light-color;
         transition: all 0.5s ease;

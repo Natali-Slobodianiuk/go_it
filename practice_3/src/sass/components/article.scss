@@ -1,0 +1,112 @@
+.article-item:not(:first-child) {
+    display: none;
+}
+
+.article-link {
+    @include font-styles-color('Rubic', 16px, $dark-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.article-title {
+    margin: 0 0 10px;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-title:hover {
+    color: $main-color;
+}
+
+.article-text {
+    @include font-styles-color('Rubic', 13px, rgba($dark-color, 0.5));
+    line-height: 20px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.article-more {
+    @include flex-center;
+}
+
+.article-caption {
+    @include font-styles-color('Rubic', 14px, $main-color);
+}
+
+.article-read-more {
+    @include link-style($dark-color, 'Rubic 500', 14px, none, none);
+    cursor: pointer;
+}
+
+.article-read-more i {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .article-item:nth-child(-n + 3) {
+        display: block;
+    }
+
+    .article-item {
+        width: 32%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .article-item {
+        width: 31%;
+    }
+
+    .article-title {
+        font-size: 22px;
+    }
+
+    .article-text {
+        font-size: 14px;
+        -webkit-line-clamp: 2;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .article-item:nth-child(-n + 4) {
+        display: block;
+    }
+
+    .article-item {
+        width: 23%;
+    }
+
+    .article-img {
+        margin-bottom: 5px;
+    }
+    .article-title {
+        font-size: 20px;
+    }
+
+    .article-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and (min-width: 1410px) {
+    .article-item {
+        width: 23.5%;
+    }
+
+    .article-title {
+        font-size: 22px;
+    }
+}
